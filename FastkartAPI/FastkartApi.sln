@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastkartAPI", "WebAPI\FastkartAPI.csproj", "{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastkartAPI.DataBase", "WebAPI.DataBase\FastkartAPI.DataBase.csproj", "{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastkartAPI.Infrastructure", "FastkartAPI.Infrastructure\FastkartAPI.Infrastructure.csproj", "{27EE5FB5-4C8F-400C-9D08-CC93C272A35A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastkartAPI.Contracts", "FastkartAPI.Contracts\FastkartAPI.Contracts.csproj", "{9ABF45F5-8E26-4439-887D-402AF0A3A456}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastkartAPI.Services", "FastkartAPI.Services\FastkartAPI.Services.csproj", "{2C0C161C-545D-4802-A478-11A13FC5C5B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27EE5FB5-4C8F-400C-9D08-CC93C272A35A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27EE5FB5-4C8F-400C-9D08-CC93C272A35A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27EE5FB5-4C8F-400C-9D08-CC93C272A35A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27EE5FB5-4C8F-400C-9D08-CC93C272A35A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ABF45F5-8E26-4439-887D-402AF0A3A456}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ABF45F5-8E26-4439-887D-402AF0A3A456}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ABF45F5-8E26-4439-887D-402AF0A3A456}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ABF45F5-8E26-4439-887D-402AF0A3A456}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C0C161C-545D-4802-A478-11A13FC5C5B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C0C161C-545D-4802-A478-11A13FC5C5B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C0C161C-545D-4802-A478-11A13FC5C5B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C0C161C-545D-4802-A478-11A13FC5C5B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9B2CD921-6957-44A4-A2E2-B5DD26AF6F0D}
+	EndGlobalSection
+EndGlobal

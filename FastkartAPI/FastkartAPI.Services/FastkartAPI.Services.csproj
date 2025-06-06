@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FastkartAPI.Contracts\FastkartAPI.Contracts.csproj" />
+    <ProjectReference Include="..\FastkartAPI.Infrastructure\FastkartAPI.Infrastructure.csproj" />
+    <ProjectReference Include="..\WebAPI.DataBase\FastkartAPI.DataBase.csproj" />
+  </ItemGroup>
+
+</Project>

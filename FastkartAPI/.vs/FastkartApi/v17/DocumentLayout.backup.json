@@ -1,0 +1,1257 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27EE5FB5-4C8F-400C-9D08-CC93C272A35A}|FastkartAPI.Infrastructure\\FastkartAPI.Infrastructure.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\fastkartapi.infrastructure\\password\\jwtprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27EE5FB5-4C8F-400C-9D08-CC93C272A35A}|FastkartAPI.Infrastructure\\FastkartAPI.Infrastructure.csproj|solutionrelative:fastkartapi.infrastructure\\password\\jwtprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C0C161C-545D-4802-A478-11A13FC5C5B1}|FastkartAPI.Services\\FastkartAPI.Services.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\fastkartapi.services\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C0C161C-545D-4802-A478-11A13FC5C5B1}|FastkartAPI.Services\\FastkartAPI.Services.csproj|solutionrelative:fastkartapi.services\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27EE5FB5-4C8F-400C-9D08-CC93C272A35A}|FastkartAPI.Infrastructure\\FastkartAPI.Infrastructure.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\fastkartapi.infrastructure\\password\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27EE5FB5-4C8F-400C-9D08-CC93C272A35A}|FastkartAPI.Infrastructure\\FastkartAPI.Infrastructure.csproj|solutionrelative:fastkartapi.infrastructure\\password\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27EE5FB5-4C8F-400C-9D08-CC93C272A35A}|FastkartAPI.Infrastructure\\FastkartAPI.Infrastructure.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\fastkartapi.infrastructure\\password\\jwtoption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27EE5FB5-4C8F-400C-9D08-CC93C272A35A}|FastkartAPI.Infrastructure\\FastkartAPI.Infrastructure.csproj|solutionrelative:fastkartapi.infrastructure\\password\\jwtoption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\authcheck\\authchecker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\authcheck\\authchecker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi.database\\repositories\\extensions\\iusermodelrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|solutionrelative:webapi.database\\repositories\\extensions\\iusermodelrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi.database\\repositories\\usermodelrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|solutionrelative:webapi.database\\repositories\\usermodelrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi.database\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|solutionrelative:webapi.database\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\views\\auth\\sign-up.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\views\\auth\\sign-up.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9ABF45F5-8E26-4439-887D-402AF0A3A456}|FastkartAPI.Contracts\\FastkartAPI.Contracts.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\fastkartapi.contracts\\contracts\\regitstercontract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9ABF45F5-8E26-4439-887D-402AF0A3A456}|FastkartAPI.Contracts\\FastkartAPI.Contracts.csproj|solutionrelative:fastkartapi.contracts\\contracts\\regitstercontract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\views\\auth\\forgot.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\views\\auth\\forgot.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\wwwroot\\assets\\js\\wow.min.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\wwwroot\\assets\\js\\wow.min.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\wwwroot\\assets\\js\\filter-sidebar.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\wwwroot\\assets\\js\\filter-sidebar.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\wwwroot\\assets\\js\\lusqsztk.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\wwwroot\\assets\\js\\lusqsztk.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\wwwroot\\assets\\js\\nav-tab.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\wwwroot\\assets\\js\\nav-tab.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\wwwroot\\assets\\js\\otp.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\wwwroot\\assets\\js\\otp.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\wwwroot\\assets\\js\\quantity.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\wwwroot\\assets\\js\\quantity.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\wwwroot\\assets\\js\\quantity-2.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\wwwroot\\assets\\js\\quantity-2.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\wwwroot\\assets\\js\\jquery.elevatezoom.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\wwwroot\\assets\\js\\jquery.elevatezoom.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\wwwroot\\assets\\js\\jquery-3.6.0.min.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\wwwroot\\assets\\js\\jquery-3.6.0.min.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi.database\\repositories\\wishlistmodelrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|solutionrelative:webapi.database\\repositories\\wishlistmodelrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27EE5FB5-4C8F-400C-9D08-CC93C272A35A}|FastkartAPI.Infrastructure\\FastkartAPI.Infrastructure.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\fastkartapi.infrastructure\\email\\smtpemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27EE5FB5-4C8F-400C-9D08-CC93C272A35A}|FastkartAPI.Infrastructure\\FastkartAPI.Infrastructure.csproj|solutionrelative:fastkartapi.infrastructure\\email\\smtpemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi.database\\models\\itemstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|solutionrelative:webapi.database\\models\\itemstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi.database\\repositories\\extensions\\iwishlistmodelrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|solutionrelative:webapi.database\\repositories\\extensions\\iwishlistmodelrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi.database\\repositories\\cartmodelrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|solutionrelative:webapi.database\\repositories\\cartmodelrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi.database\\models\\wishlistmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|solutionrelative:webapi.database\\models\\wishlistmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi.database\\myapplicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|solutionrelative:webapi.database\\myapplicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi.database\\models\\cartmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|solutionrelative:webapi.database\\models\\cartmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi.database\\repositories\\extensions\\icartmodelrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|solutionrelative:webapi.database\\repositories\\extensions\\icartmodelrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi.database\\configurations\\wishlistmodelconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|solutionrelative:webapi.database\\configurations\\wishlistmodelconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi.database\\configurations\\cartmodelconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|solutionrelative:webapi.database\\configurations\\cartmodelconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi.database\\configurations\\itemstoreconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|solutionrelative:webapi.database\\configurations\\itemstoreconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi.database\\configurations\\usermodelconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|solutionrelative:webapi.database\\configurations\\usermodelconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9ABF45F5-8E26-4439-887D-402AF0A3A456}|FastkartAPI.Contracts\\FastkartAPI.Contracts.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\fastkartapi.contracts\\mapping\\automappingproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9ABF45F5-8E26-4439-887D-402AF0A3A456}|FastkartAPI.Contracts\\FastkartAPI.Contracts.csproj|solutionrelative:fastkartapi.contracts\\mapping\\automappingproducts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9ABF45F5-8E26-4439-887D-402AF0A3A456}|FastkartAPI.Contracts\\FastkartAPI.Contracts.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\fastkartapi.contracts\\contracts\\logincontract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9ABF45F5-8E26-4439-887D-402AF0A3A456}|FastkartAPI.Contracts\\FastkartAPI.Contracts.csproj|solutionrelative:fastkartapi.contracts\\contracts\\logincontract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\views\\items\\product.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\views\\items\\product.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\views\\items\\itemstore.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\views\\items\\itemstore.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\wwwroot\\front-end\\wishlist.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\wwwroot\\front-end\\wishlist.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\controllers\\itemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\controllers\\itemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C0C161C-545D-4802-A478-11A13FC5C5B1}|FastkartAPI.Services\\FastkartAPI.Services.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\fastkartapi.services\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C0C161C-545D-4802-A478-11A13FC5C5B1}|FastkartAPI.Services\\FastkartAPI.Services.csproj|solutionrelative:fastkartapi.services\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi.database\\repositories\\itemstorerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|solutionrelative:webapi.database\\repositories\\itemstorerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\views\\items\\allproducts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\views\\items\\allproducts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9ABF45F5-8E26-4439-887D-402AF0A3A456}|FastkartAPI.Contracts\\FastkartAPI.Contracts.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\fastkartapi.contracts\\dtos\\productcarddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9ABF45F5-8E26-4439-887D-402AF0A3A456}|FastkartAPI.Contracts\\FastkartAPI.Contracts.csproj|solutionrelative:fastkartapi.contracts\\dtos\\productcarddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\views\\shared\\_itemcard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\views\\shared\\_itemcard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9ABF45F5-8E26-4439-887D-402AF0A3A456}|FastkartAPI.Contracts\\FastkartAPI.Contracts.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\fastkartapi.contracts\\dtos\\createproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9ABF45F5-8E26-4439-887D-402AF0A3A456}|FastkartAPI.Contracts\\FastkartAPI.Contracts.csproj|solutionrelative:fastkartapi.contracts\\dtos\\createproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\views\\buy\\wishlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\views\\buy\\wishlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi.database\\models\\enums\\unitsenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|solutionrelative:webapi.database\\models\\enums\\unitsenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\Desktop\\projects\\CarBookingAPI\\CarBookingAPI\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi.database\\models\\enums\\typeitemenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|solutionrelative:webapi.database\\models\\enums\\typeitemenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\areas\\adminpanel\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\areas\\adminpanel\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C0C161C-545D-4802-A478-11A13FC5C5B1}|FastkartAPI.Services\\FastkartAPI.Services.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\fastkartapi.services\\services\\extensions\\iservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C0C161C-545D-4802-A478-11A13FC5C5B1}|FastkartAPI.Services\\FastkartAPI.Services.csproj|solutionrelative:fastkartapi.services\\services\\extensions\\iservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\areas\\adminpanel\\views\\admin\\seller-dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\areas\\adminpanel\\views\\admin\\seller-dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\controllers\\sendercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\controllers\\sendercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\views\\buy\\compare.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\views\\buy\\compare.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\views\\sender\\contact-us.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\views\\sender\\contact-us.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\wwwroot\\front-end\\contact-us.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\wwwroot\\front-end\\contact-us.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\wwwroot\\front-end\\compare.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\wwwroot\\front-end\\compare.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\views\\buy\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\views\\buy\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\views\\buy\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\views\\buy\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\views\\shared\\_menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\views\\shared\\_menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\wwwroot\\assets\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\wwwroot\\assets\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi\\views\\shared\\_menu.cshtml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{ED1240D1-1DBA-4DBC-A8EE-C91177C85F70}|WebAPI\\FastkartAPI.csproj|solutionrelative:webapi\\views\\shared\\_menu.cshtml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi.database\\migrations\\20250530112439_initial.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|solutionrelative:webapi.database\\migrations\\20250530112439_initial.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi.database\\migrations\\20250530112439_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|solutionrelative:webapi.database\\migrations\\20250530112439_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|c:\\users\\user\\desktop\\projects\\semsetr_oris_be\\fastkartapi\\webapi.database\\migrations\\20250605134216_initial2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F004F2B3-3A3D-4AE3-8385-78E22E34EB00}|WebAPI.DataBase\\FastkartAPI.DataBase.csproj|solutionrelative:webapi.database\\migrations\\20250605134216_initial2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAIA2wDYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T16:28:04.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Dockerfile",
+              "RelativeDocumentMoniker": "WebAPI\\Dockerfile",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Dockerfile",
+              "RelativeToolTip": "WebAPI\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-05-24T16:58:50.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Program.cs",
+              "RelativeToolTip": "WebAPI\\Program.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAABsAAABnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T16:49:45.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuthChecker.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\AuthCheck\\AuthChecker.cs",
+              "RelativeDocumentMoniker": "WebAPI\\AuthCheck\\AuthChecker.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\AuthCheck\\AuthChecker.cs",
+              "RelativeToolTip": "WebAPI\\AuthCheck\\AuthChecker.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T11:21:48.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "JwtOption.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\FastkartAPI.Infrastructure\\Password\\JwtOption.cs",
+              "RelativeDocumentMoniker": "FastkartAPI.Infrastructure\\Password\\JwtOption.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\FastkartAPI.Infrastructure\\Password\\JwtOption.cs",
+              "RelativeToolTip": "FastkartAPI.Infrastructure\\Password\\JwtOption.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T20:50:25.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "JwtProvider.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\FastkartAPI.Infrastructure\\Password\\JwtProvider.cs",
+              "RelativeDocumentMoniker": "FastkartAPI.Infrastructure\\Password\\JwtProvider.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\FastkartAPI.Infrastructure\\Password\\JwtProvider.cs",
+              "RelativeToolTip": "FastkartAPI.Infrastructure\\Password\\JwtProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T20:51:04.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PasswordHasher.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\FastkartAPI.Infrastructure\\Password\\PasswordHasher.cs",
+              "RelativeDocumentMoniker": "FastkartAPI.Infrastructure\\Password\\PasswordHasher.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\FastkartAPI.Infrastructure\\Password\\PasswordHasher.cs",
+              "RelativeToolTip": "FastkartAPI.Infrastructure\\Password\\PasswordHasher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T20:55:10.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\FastkartAPI.Services\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "FastkartAPI.Services\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\FastkartAPI.Services\\Services\\UserService.cs",
+              "RelativeToolTip": "FastkartAPI.Services\\Services\\UserService.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAADwvy8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T19:53:19.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "login.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Views\\Auth\\login.cshtml",
+              "RelativeDocumentMoniker": "WebAPI\\Views\\Auth\\login.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Views\\Auth\\login.cshtml",
+              "RelativeToolTip": "WebAPI\\Views\\Auth\\login.cshtml",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAAwKMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-05T07:32:08.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "WebAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\appsettings.json",
+              "RelativeToolTip": "WebAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-24T18:55:38.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IUserModelRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Repositories\\Extensions\\IUserModelRepository.cs",
+              "RelativeDocumentMoniker": "WebAPI.DataBase\\Repositories\\Extensions\\IUserModelRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Repositories\\Extensions\\IUserModelRepository.cs",
+              "RelativeToolTip": "WebAPI.DataBase\\Repositories\\Extensions\\IUserModelRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T22:33:32.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Models\\UserModel.cs",
+              "RelativeDocumentMoniker": "WebAPI.DataBase\\Models\\UserModel.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Models\\UserModel.cs",
+              "RelativeToolTip": "WebAPI.DataBase\\Models\\UserModel.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAtwB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T14:13:32.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserModelRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Repositories\\UserModelRepository.cs",
+              "RelativeDocumentMoniker": "WebAPI.DataBase\\Repositories\\UserModelRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Repositories\\UserModelRepository.cs",
+              "RelativeToolTip": "WebAPI.DataBase\\Repositories\\UserModelRepository.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAowAcAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T22:44:15.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "nav-tab.js",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\wwwroot\\assets\\js\\nav-tab.js",
+              "RelativeDocumentMoniker": "WebAPI\\wwwroot\\assets\\js\\nav-tab.js",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\wwwroot\\assets\\js\\nav-tab.js",
+              "RelativeToolTip": "WebAPI\\wwwroot\\assets\\js\\nav-tab.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-05T22:49:27.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "lusqsztk.js",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\wwwroot\\assets\\js\\lusqsztk.js",
+              "RelativeDocumentMoniker": "WebAPI\\wwwroot\\assets\\js\\lusqsztk.js",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\wwwroot\\assets\\js\\lusqsztk.js",
+              "RelativeToolTip": "WebAPI\\wwwroot\\assets\\js\\lusqsztk.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-05T22:49:31.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "filter-sidebar.js",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\wwwroot\\assets\\js\\filter-sidebar.js",
+              "RelativeDocumentMoniker": "WebAPI\\wwwroot\\assets\\js\\filter-sidebar.js",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\wwwroot\\assets\\js\\filter-sidebar.js",
+              "RelativeToolTip": "WebAPI\\wwwroot\\assets\\js\\filter-sidebar.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-05T22:49:40.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "wow.min.js",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\wwwroot\\assets\\js\\wow.min.js",
+              "RelativeDocumentMoniker": "WebAPI\\wwwroot\\assets\\js\\wow.min.js",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\wwwroot\\assets\\js\\wow.min.js",
+              "RelativeToolTip": "WebAPI\\wwwroot\\assets\\js\\wow.min.js",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-05T22:49:53.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "sign-up.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Views\\Auth\\sign-up.cshtml",
+              "RelativeDocumentMoniker": "WebAPI\\Views\\Auth\\sign-up.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Views\\Auth\\sign-up.cshtml",
+              "RelativeToolTip": "WebAPI\\Views\\Auth\\sign-up.cshtml",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAAwKAAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-05T07:36:54.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RegitsterContract.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\FastkartAPI.Contracts\\Contracts\\RegitsterContract.cs",
+              "RelativeDocumentMoniker": "FastkartAPI.Contracts\\Contracts\\RegitsterContract.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\FastkartAPI.Contracts\\Contracts\\RegitsterContract.cs",
+              "RelativeToolTip": "FastkartAPI.Contracts\\Contracts\\RegitsterContract.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T20:17:08.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "forgot.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Views\\Auth\\forgot.cshtml",
+              "RelativeDocumentMoniker": "WebAPI\\Views\\Auth\\forgot.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Views\\Auth\\forgot.cshtml",
+              "RelativeToolTip": "WebAPI\\Views\\Auth\\forgot.cshtml",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAAwG0AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-05T07:26:09.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "otp.js",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\wwwroot\\assets\\js\\otp.js",
+              "RelativeDocumentMoniker": "WebAPI\\wwwroot\\assets\\js\\otp.js",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\wwwroot\\assets\\js\\otp.js",
+              "RelativeToolTip": "WebAPI\\wwwroot\\assets\\js\\otp.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-05T22:49:24.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "quantity.js",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\wwwroot\\assets\\js\\quantity.js",
+              "RelativeDocumentMoniker": "WebAPI\\wwwroot\\assets\\js\\quantity.js",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\wwwroot\\assets\\js\\quantity.js",
+              "RelativeToolTip": "WebAPI\\wwwroot\\assets\\js\\quantity.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-05T22:49:21.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "quantity-2.js",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\wwwroot\\assets\\js\\quantity-2.js",
+              "RelativeDocumentMoniker": "WebAPI\\wwwroot\\assets\\js\\quantity-2.js",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\wwwroot\\assets\\js\\quantity-2.js",
+              "RelativeToolTip": "WebAPI\\wwwroot\\assets\\js\\quantity-2.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-05T22:49:16.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "jquery.elevatezoom.js",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\wwwroot\\assets\\js\\jquery.elevatezoom.js",
+              "RelativeDocumentMoniker": "WebAPI\\wwwroot\\assets\\js\\jquery.elevatezoom.js",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\wwwroot\\assets\\js\\jquery.elevatezoom.js",
+              "RelativeToolTip": "WebAPI\\wwwroot\\assets\\js\\jquery.elevatezoom.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-05T22:48:30.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "jquery-3.6.0.min.js",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\wwwroot\\assets\\js\\jquery-3.6.0.min.js",
+              "RelativeDocumentMoniker": "WebAPI\\wwwroot\\assets\\js\\jquery-3.6.0.min.js",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\wwwroot\\assets\\js\\jquery-3.6.0.min.js",
+              "RelativeToolTip": "WebAPI\\wwwroot\\assets\\js\\jquery-3.6.0.min.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-05T22:48:27.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "WishlistModelRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Repositories\\WishlistModelRepository.cs",
+              "RelativeDocumentMoniker": "WebAPI.DataBase\\Repositories\\WishlistModelRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Repositories\\WishlistModelRepository.cs",
+              "RelativeToolTip": "WebAPI.DataBase\\Repositories\\WishlistModelRepository.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwCcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T22:43:48.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "SmtpEmailSender.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\FastkartAPI.Infrastructure\\Email\\SmtpEmailSender.cs",
+              "RelativeDocumentMoniker": "FastkartAPI.Infrastructure\\Email\\SmtpEmailSender.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\FastkartAPI.Infrastructure\\Email\\SmtpEmailSender.cs",
+              "RelativeToolTip": "FastkartAPI.Infrastructure\\Email\\SmtpEmailSender.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T16:49:26.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebAPI\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "WebAPI\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAEMHAAAAAAAAAAAjwDUHAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-01T16:21:17.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ItemStore.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Models\\ItemStore.cs",
+              "RelativeDocumentMoniker": "WebAPI.DataBase\\Models\\ItemStore.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Models\\ItemStore.cs",
+              "RelativeToolTip": "WebAPI.DataBase\\Models\\ItemStore.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T17:05:34.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "IWishlistModelRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Repositories\\Extensions\\IWishlistModelRepository.cs",
+              "RelativeDocumentMoniker": "WebAPI.DataBase\\Repositories\\Extensions\\IWishlistModelRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Repositories\\Extensions\\IWishlistModelRepository.cs",
+              "RelativeToolTip": "WebAPI.DataBase\\Repositories\\Extensions\\IWishlistModelRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T20:39:54.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T14:58:54.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CartModelRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Repositories\\CartModelRepository.cs",
+              "RelativeDocumentMoniker": "WebAPI.DataBase\\Repositories\\CartModelRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Repositories\\CartModelRepository.cs",
+              "RelativeToolTip": "WebAPI.DataBase\\Repositories\\CartModelRepository.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T22:16:07.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "WishlistModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Models\\WishlistModel.cs",
+              "RelativeDocumentMoniker": "WebAPI.DataBase\\Models\\WishlistModel.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Models\\WishlistModel.cs",
+              "RelativeToolTip": "WebAPI.DataBase\\Models\\WishlistModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T14:12:34.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "MyApplicationContext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\MyApplicationContext.cs",
+              "RelativeDocumentMoniker": "WebAPI.DataBase\\MyApplicationContext.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\MyApplicationContext.cs",
+              "RelativeToolTip": "WebAPI.DataBase\\MyApplicationContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T20:37:18.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "CartModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Models\\CartModel.cs",
+              "RelativeDocumentMoniker": "WebAPI.DataBase\\Models\\CartModel.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Models\\CartModel.cs",
+              "RelativeToolTip": "WebAPI.DataBase\\Models\\CartModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T14:12:20.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ICartModelRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Repositories\\Extensions\\ICartModelRepository.cs",
+              "RelativeDocumentMoniker": "WebAPI.DataBase\\Repositories\\Extensions\\ICartModelRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Repositories\\Extensions\\ICartModelRepository.cs",
+              "RelativeToolTip": "WebAPI.DataBase\\Repositories\\Extensions\\ICartModelRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T20:39:36.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "UserModelConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Configurations\\UserModelConfiguration.cs",
+              "RelativeDocumentMoniker": "WebAPI.DataBase\\Configurations\\UserModelConfiguration.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Configurations\\UserModelConfiguration.cs",
+              "RelativeToolTip": "WebAPI.DataBase\\Configurations\\UserModelConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T20:36:58.571Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "WishlistModelConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Configurations\\WishlistModelConfiguration.cs",
+              "RelativeDocumentMoniker": "WebAPI.DataBase\\Configurations\\WishlistModelConfiguration.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Configurations\\WishlistModelConfiguration.cs",
+              "RelativeToolTip": "WebAPI.DataBase\\Configurations\\WishlistModelConfiguration.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T20:34:49.508Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "CartModelConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Configurations\\CartModelConfiguration.cs",
+              "RelativeDocumentMoniker": "WebAPI.DataBase\\Configurations\\CartModelConfiguration.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Configurations\\CartModelConfiguration.cs",
+              "RelativeToolTip": "WebAPI.DataBase\\Configurations\\CartModelConfiguration.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAuwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T20:34:22.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "LoginContract.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\FastkartAPI.Contracts\\Contracts\\LoginContract.cs",
+              "RelativeDocumentMoniker": "FastkartAPI.Contracts\\Contracts\\LoginContract.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\FastkartAPI.Contracts\\Contracts\\LoginContract.cs",
+              "RelativeToolTip": "FastkartAPI.Contracts\\Contracts\\LoginContract.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T20:16:55.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ItemStoreConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Configurations\\ItemStoreConfiguration.cs",
+              "RelativeDocumentMoniker": "WebAPI.DataBase\\Configurations\\ItemStoreConfiguration.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Configurations\\ItemStoreConfiguration.cs",
+              "RelativeToolTip": "WebAPI.DataBase\\Configurations\\ItemStoreConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T14:21:50.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "product.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Views\\Items\\product.cshtml",
+              "RelativeDocumentMoniker": "WebAPI\\Views\\Items\\product.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Views\\Items\\product.cshtml",
+              "RelativeToolTip": "WebAPI\\Views\\Items\\product.cshtml",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAAAFYAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-01T17:26:38.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "AutoMappingProducts.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\FastkartAPI.Contracts\\Mapping\\AutoMappingProducts.cs",
+              "RelativeDocumentMoniker": "FastkartAPI.Contracts\\Mapping\\AutoMappingProducts.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\FastkartAPI.Contracts\\Mapping\\AutoMappingProducts.cs",
+              "RelativeToolTip": "FastkartAPI.Contracts\\Mapping\\AutoMappingProducts.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T19:47:30.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "ItemStore.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Views\\Items\\ItemStore.cshtml",
+              "RelativeDocumentMoniker": "WebAPI\\Views\\Items\\ItemStore.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Views\\Items\\ItemStore.cshtml",
+              "RelativeToolTip": "WebAPI\\Views\\Items\\ItemStore.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-05T07:20:29.734Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "wishlist.html",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\wwwroot\\front-end\\wishlist.html",
+              "RelativeDocumentMoniker": "WebAPI\\wwwroot\\front-end\\wishlist.html",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\wwwroot\\front-end\\wishlist.html",
+              "RelativeToolTip": "WebAPI\\wwwroot\\front-end\\wishlist.html",
+              "ViewState": "AgIAACQJAAAAAAAAAAAswEkJAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-06-05T08:08:44.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "ItemStoreRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Repositories\\ItemStoreRepository.cs",
+              "RelativeDocumentMoniker": "WebAPI.DataBase\\Repositories\\ItemStoreRepository.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Repositories\\ItemStoreRepository.cs",
+              "RelativeToolTip": "WebAPI.DataBase\\Repositories\\ItemStoreRepository.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAA8wDoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T14:22:48.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\FastkartAPI.Services\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "FastkartAPI.Services\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\FastkartAPI.Services\\Services\\ProductService.cs",
+              "RelativeToolTip": "FastkartAPI.Services\\Services\\ProductService.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAqwC0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T20:59:19.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "ItemsController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Controllers\\ItemsController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\ItemsController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Controllers\\ItemsController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\ItemsController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAwwCYAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T16:21:01.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "allProducts.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Views\\Items\\allProducts.cshtml",
+              "RelativeDocumentMoniker": "WebAPI\\Views\\Items\\allProducts.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Views\\Items\\allProducts.cshtml",
+              "RelativeToolTip": "WebAPI\\Views\\Items\\allProducts.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAA4DAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-01T18:43:26.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "ProductCardDTO.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\FastkartAPI.Contracts\\DTOs\\ProductCardDTO.cs",
+              "RelativeDocumentMoniker": "FastkartAPI.Contracts\\DTOs\\ProductCardDTO.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\FastkartAPI.Contracts\\DTOs\\ProductCardDTO.cs",
+              "RelativeToolTip": "FastkartAPI.Contracts\\DTOs\\ProductCardDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T19:47:39.742Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "_ItemCard.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Views\\Shared\\_ItemCard.cshtml",
+              "RelativeDocumentMoniker": "WebAPI\\Views\\Shared\\_ItemCard.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Views\\Shared\\_ItemCard.cshtml",
+              "RelativeToolTip": "WebAPI\\Views\\Shared\\_ItemCard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-05T14:20:11.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "CreateProductDTO.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\FastkartAPI.Contracts\\DTOs\\CreateProductDTO.cs",
+              "RelativeDocumentMoniker": "FastkartAPI.Contracts\\DTOs\\CreateProductDTO.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\FastkartAPI.Contracts\\DTOs\\CreateProductDTO.cs",
+              "RelativeToolTip": "FastkartAPI.Contracts\\DTOs\\CreateProductDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T08:13:27.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "_Header.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Views\\Shared\\_Header.cshtml",
+              "RelativeDocumentMoniker": "WebAPI\\Views\\Shared\\_Header.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Views\\Shared\\_Header.cshtml",
+              "RelativeToolTip": "WebAPI\\Views\\Shared\\_Header.cshtml",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAEEAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-01T16:10:21.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "UnitsEnum.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Models\\Enums\\UnitsEnum.cs",
+              "RelativeDocumentMoniker": "WebAPI.DataBase\\Models\\Enums\\UnitsEnum.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Models\\Enums\\UnitsEnum.cs",
+              "RelativeToolTip": "WebAPI.DataBase\\Models\\Enums\\UnitsEnum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T13:37:55.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "wishlist.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Views\\Buy\\wishlist.cshtml",
+              "RelativeDocumentMoniker": "WebAPI\\Views\\Buy\\wishlist.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Views\\Buy\\wishlist.cshtml",
+              "RelativeToolTip": "WebAPI\\Views\\Buy\\wishlist.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAiwDAAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-05T08:08:36.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\CarBookingAPI\\CarBookingAPI\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\CarBookingAPI\\CarBookingAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\CarBookingAPI\\CarBookingAPI\\Program.cs",
+              "RelativeToolTip": "..\\..\\CarBookingAPI\\CarBookingAPI\\Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T13:46:00.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "20250605134216_initial2.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Migrations\\20250605134216_initial2.cs",
+              "RelativeDocumentMoniker": "WebAPI.DataBase\\Migrations\\20250605134216_initial2.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Migrations\\20250605134216_initial2.cs",
+              "RelativeToolTip": "WebAPI.DataBase\\Migrations\\20250605134216_initial2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T13:42:16.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "TypeItemEnum.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Models\\Enums\\TypeItemEnum.cs",
+              "RelativeDocumentMoniker": "WebAPI.DataBase\\Models\\Enums\\TypeItemEnum.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Models\\Enums\\TypeItemEnum.cs",
+              "RelativeToolTip": "WebAPI.DataBase\\Models\\Enums\\TypeItemEnum.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T16:49:34.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Areas\\AdminPanel\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Areas\\AdminPanel\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Areas\\AdminPanel\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "WebAPI\\Areas\\AdminPanel\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAArwBwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T16:32:13.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "IService.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\FastkartAPI.Services\\Services\\Extensions\\IService.cs",
+              "RelativeDocumentMoniker": "FastkartAPI.Services\\Services\\Extensions\\IService.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\FastkartAPI.Services\\Services\\Extensions\\IService.cs",
+              "RelativeToolTip": "FastkartAPI.Services\\Services\\Extensions\\IService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T12:49:50.279Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "seller-dashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Areas\\AdminPanel\\Views\\Admin\\seller-dashboard.cshtml",
+              "RelativeDocumentMoniker": "WebAPI\\Areas\\AdminPanel\\Views\\Admin\\seller-dashboard.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Areas\\AdminPanel\\Views\\Admin\\seller-dashboard.cshtml",
+              "RelativeToolTip": "WebAPI\\Areas\\AdminPanel\\Views\\Admin\\seller-dashboard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-01T14:54:46.165Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "SenderController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Controllers\\SenderController.cs",
+              "RelativeDocumentMoniker": "WebAPI\\Controllers\\SenderController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Controllers\\SenderController.cs",
+              "RelativeToolTip": "WebAPI\\Controllers\\SenderController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T07:52:05.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "compare.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Views\\Buy\\compare.cshtml",
+              "RelativeDocumentMoniker": "WebAPI\\Views\\Buy\\compare.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Views\\Buy\\compare.cshtml",
+              "RelativeToolTip": "WebAPI\\Views\\Buy\\compare.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAC0AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-05T07:49:16.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "contact-us.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Views\\Sender\\contact-us.cshtml",
+              "RelativeDocumentMoniker": "WebAPI\\Views\\Sender\\contact-us.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Views\\Sender\\contact-us.cshtml",
+              "RelativeToolTip": "WebAPI\\Views\\Sender\\contact-us.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-05T07:53:51.837Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "contact-us.html",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\wwwroot\\front-end\\contact-us.html",
+              "RelativeDocumentMoniker": "WebAPI\\wwwroot\\front-end\\contact-us.html",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\wwwroot\\front-end\\contact-us.html",
+              "RelativeToolTip": "WebAPI\\wwwroot\\front-end\\contact-us.html",
+              "ViewState": "AgIAAGcHAAAAAAAAAAAAwI8HAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-06-05T07:54:00.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "compare.html",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\wwwroot\\front-end\\compare.html",
+              "RelativeDocumentMoniker": "WebAPI\\wwwroot\\front-end\\compare.html",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\wwwroot\\front-end\\compare.html",
+              "RelativeToolTip": "WebAPI\\wwwroot\\front-end\\compare.html",
+              "ViewState": "AgIAAKkHAAAAAAAAAAAAwNEHAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-06-05T07:49:24.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "checkout.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Views\\Buy\\checkout.cshtml",
+              "RelativeDocumentMoniker": "WebAPI\\Views\\Buy\\checkout.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Views\\Buy\\checkout.cshtml",
+              "RelativeToolTip": "WebAPI\\Views\\Buy\\checkout.cshtml",
+              "ViewState": "AgIAAIUCAAAAAAAAAAAAAC0DAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-05T07:47:00.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "cart.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Views\\Buy\\cart.cshtml",
+              "RelativeDocumentMoniker": "WebAPI\\Views\\Buy\\cart.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Views\\Buy\\cart.cshtml",
+              "RelativeToolTip": "WebAPI\\Views\\Buy\\cart.cshtml",
+              "ViewState": "AgIAAHQBAAAAAAAAAAAAAIMBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-05T07:41:09.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebAPI\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebAPI\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-01T18:01:33.537Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "WebAPI\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "WebAPI\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-01T18:01:53.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "_Menu.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Views\\Shared\\_Menu.cshtml",
+              "RelativeDocumentMoniker": "WebAPI\\Views\\Shared\\_Menu.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Views\\Shared\\_Menu.cshtml",
+              "RelativeToolTip": "WebAPI\\Views\\Shared\\_Menu.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-01T16:18:44.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\wwwroot\\assets\\css\\style.css",
+              "RelativeDocumentMoniker": "WebAPI\\wwwroot\\assets\\css\\style.css",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\wwwroot\\assets\\css\\style.css",
+              "RelativeToolTip": "WebAPI\\wwwroot\\assets\\css\\style.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-01T19:00:20.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "_Menu.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Views\\Shared\\_Menu.cshtml",
+              "RelativeDocumentMoniker": "WebAPI\\Views\\Shared\\_Menu.cshtml",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI\\Views\\Shared\\_Menu.cshtml",
+              "RelativeToolTip": "WebAPI\\Views\\Shared\\_Menu.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFgAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-01T16:17:02.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "20250530112439_initial.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Migrations\\20250530112439_initial.Designer.cs",
+              "RelativeDocumentMoniker": "WebAPI.DataBase\\Migrations\\20250530112439_initial.Designer.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Migrations\\20250530112439_initial.Designer.cs",
+              "RelativeToolTip": "WebAPI.DataBase\\Migrations\\20250530112439_initial.Designer.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAQwBEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T11:26:58.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "20250530112439_initial.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Migrations\\20250530112439_initial.cs",
+              "RelativeDocumentMoniker": "WebAPI.DataBase\\Migrations\\20250530112439_initial.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\projects\\Semsetr_ORIS_BE\\FastkartAPI\\WebAPI.DataBase\\Migrations\\20250530112439_initial.cs",
+              "RelativeToolTip": "WebAPI.DataBase\\Migrations\\20250530112439_initial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T11:24:40.077Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
