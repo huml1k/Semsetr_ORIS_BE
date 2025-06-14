@@ -5,9 +5,9 @@ using FastkartAPI.DataBase.Models;
 
 namespace FastkartAPI.Services.Mapping
 {
-    public class AutoMappingProducts : Profile
+    public class AutoMapping : Profile
     {
-        public AutoMappingProducts() 
+        public AutoMapping() 
         {
             this.CreateMap<ItemStore, ProductCardDTO>();
             this.CreateMap<ItemStore, CreateProductDTO>();

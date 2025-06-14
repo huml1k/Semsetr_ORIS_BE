@@ -16,7 +16,11 @@ namespace FastkartAPI.DataBase.Repositories.Interfaces
 
         public Task<ItemStore> GetByName(string name);
 
-        public Task<List<ItemStore>> GetByCategory(TypeItemEnum type);
+        public Task<List<ItemStore>> GetByCategory(List<TypeItemEnum> categories);
+
+        public Task DecreaseStock(Guid itemId, int quantity);
+
+        public Task<List<ItemStore>> Search(string searchTerm);
 
         public Task Create(ItemStore user);
 

@@ -26,7 +26,6 @@ namespace FastkartAPI.Controllers
         [HttpGet("forgot-password")]
         public async Task<IActionResult> GetForgot() => View("forgot");
 
-
         [HttpPost("register")]
         public async Task<IActionResult> Regitster([FromBody] RegitsterContract user)
         {
@@ -52,6 +51,13 @@ namespace FastkartAPI.Controllers
             Response.Cookies.Append("ass-token", result);
 
             return Ok(new {result});
+        }
+
+        [HttpPost("logout")]
+        public async Task<IActionResult> Logout() 
+        {
+            Response.Cookies.Delete("ass-token");
+            return Redirect("/home/index");
         }
 
         [HttpPost("forgot")]

@@ -9,11 +9,11 @@ namespace FastkartAPI.DataBase.Repositories.Extensions
 {
     public interface ICartModelRepository
     {
-        public Task Create(CartModel cart);
+        public Task Create(Guid userId, Guid itemId, int qty);
 
-        public Task Update(CartModel cart); 
+        public Task Update(Guid cartItemId, int newQty); 
 
-        public Task Delete(CartModel cart);
+        public Task Delete(Guid cartItemId);
         
         public Task<List<CartModel>> GetByUserId(Guid id);
 

@@ -1,3 +1,6 @@
+@model IEnumerable<FastkartAPI.DataBase.Models.ItemStore>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -96,7 +99,7 @@
                         <nav>
                             <ol class="breadcrumb mb-0">
                                 <li class="breadcrumb-item">
-                                    <a href="index.html">
+                                    <a href="/home/index">
                                         <i class="fa-solid fa-house"></i>
                                     </a>
                                 </li>
@@ -450,6 +453,9 @@
                                                 <use xlink:href="https://themes.pixelstrap.com/fastkart/assets/svg/leaf.svg#leaf"></use>
                                             </svg>
                                         </span>
+                                        <h2> 
+                                            <a href="/admin/addProductPage">Create Product</a>
+                                        </h2>
                                     </div>
 
                                     <div class="table-responsive dashboard-bg-box">
@@ -464,163 +470,8 @@
                                                     <th scope="col">Edit / Delete</th>
                                                 </tr>
                                             </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="product-image">
-                                                        <img src="../assets/images/vegetable/product/1.png"
-                                                            class="img-fluid" alt="">
-                                                    </td>
-                                                    <td>
-                                                        <h6>Fantasy Crunchy Choco Chip Cookies</h6>
-                                                    </td>
-                                                    <td>
-                                                        <h6 class="theme-color fw-bold">$25.69</h6>
-                                                    </td>
-                                                    <td>
-                                                        <h6>63</h6>
-                                                    </td>
-                                                    <td>
-                                                        <h6>152</h6>
-                                                    </td>
-                                                    <td class="edit-delete">
-                                                        <i data-feather="edit" class="edit"></i>
-                                                        <i data-feather="trash-2" class="delete"></i>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td class="product-image">
-                                                        <img src="../assets/images/vegetable/product/2.png"
-                                                            class="img-fluid" alt="">
-                                                    </td>
-                                                    <td>
-                                                        <h6>Peanut Butter Bite Premium Butter Cookies 600 g</h6>
-                                                    </td>
-                                                    <td>
-                                                        <h6 class="theme-color fw-bold">$35.36</h6>
-                                                    </td>
-                                                    <td>
-                                                        <h6>14</h6>
-                                                    </td>
-                                                    <td>
-                                                        <h6>34</h6>
-                                                    </td>
-                                                    <td class="edit-delete">
-                                                        <i data-feather="edit" class="edit"></i>
-                                                        <i data-feather="trash-2" class="delete"></i>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td class="product-image">
-                                                        <img src="../assets/images/vegetable/product/3.png"
-                                                            class="img-fluid" alt="">
-                                                    </td>
-                                                    <td>
-                                                        <h6>Yumitos Chilli Sprinkled Potato Chips 100 g</h6>
-                                                    </td>
-                                                    <td>
-                                                        <h6 class="theme-color fw-bold">$78.55</h6>
-                                                    </td>
-                                                    <td>
-                                                        <h6>55</h6>
-                                                    </td>
-                                                    <td>
-                                                        <h6>78</h6>
-                                                    </td>
-                                                    <td class="edit-delete">
-                                                        <i data-feather="edit" class="edit"></i>
-                                                        <i data-feather="trash-2" class="delete"></i>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="product-image">
-                                                        <img src="../assets/images/vegetable/product/4.png"
-                                                            class="img-fluid" alt="">
-                                                    </td>
-                                                    <td>
-                                                        <h6>healthy Long Life Toned Milk 1 L</h6>
-                                                    </td>
-                                                    <td>
-                                                        <h6 class="theme-color fw-bold">$32.98</h6>
-                                                    </td>
-                                                    <td>
-                                                        <h6>69</h6>
-                                                    </td>
-                                                    <td>
-                                                        <h6>135</h6>
-                                                    </td>
-                                                    <td class="edit-delete">
-                                                        <i data-feather="edit" class="edit"></i>
-                                                        <i data-feather="trash-2" class="delete"></i>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="product-image">
-                                                        <img src="../assets/images/vegetable/product/5.png"
-                                                            class="img-fluid" alt="">
-                                                    </td>
-                                                    <td>
-                                                        <h6>Raw Mutton Leg, Packaging 5 Kg</h6>
-                                                    </td>
-                                                    <td>
-                                                        <h6 class="theme-color fw-bold">$36.98</h6>
-                                                    </td>
-                                                    <td>
-                                                        <h6>35</h6>
-                                                    </td>
-                                                    <td>
-                                                        <h6>154</h6>
-                                                    </td>
-                                                    <td class="edit-delete">
-                                                        <i data-feather="edit" class="edit"></i>
-                                                        <i data-feather="trash-2" class="delete"></i>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="product-image">
-                                                        <img src="../assets/images/vegetable/product/6.png"
-                                                            class="img-fluid" alt="">
-                                                    </td>
-                                                    <td>
-                                                        <h6>Cold Brew Coffee Instant Coffee 50 g</h6>
-                                                    </td>
-                                                    <td>
-                                                        <h6 class="theme-color fw-bold">$36.58</h6>
-                                                    </td>
-                                                    <td>
-                                                        <h6>69</h6>
-                                                    </td>
-                                                    <td>
-                                                        <h6>168</h6>
-                                                    </td>
-                                                    <td class="edit-delete">
-                                                        <i data-feather="edit" class="edit"></i>
-                                                        <i data-feather="trash-2" class="delete"></i>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="product-image">
-                                                        <img src="../assets/images/vegetable/product/7.png"
-                                                            class="img-fluid" alt="">
-                                                    </td>
-                                                    <td>
-                                                        <h6>SnackAmor Combo Pack of Jowar Stick and Jowar Chips</h6>
-                                                    </td>
-                                                    <td>
-                                                        <h6 class="theme-color fw-bold">$25.69</h6>
-                                                    </td>
-                                                    <td>
-                                                        <h6>63</h6>
-                                                    </td>
-                                                    <td>
-                                                        <h6>152</h6>
-                                                    </td>
-                                                    <td class="edit-delete">
-                                                        <i data-feather="edit" class="edit"></i>
-                                                        <i data-feather="trash-2" class="delete"></i>
-                                                    </td>
-                                                </tr>
+                                            <tbody id="productsTableBody">
+                                                <!-- Данные будут загружаться через AJAX -->
                                             </tbody>
                                         </table>
 
@@ -1580,6 +1431,79 @@
         </div>
     </div>
     <!-- Edit Profile Modal End -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Загрузка данных
+            function loadProducts() {
+                $.get('/Admin/all', function(products) {
+                    const tbody = $('#productsTableBody');
+                    tbody.empty();
+
+                    products.forEach(item => {
+                        const row = `
+                        <tr data-id="${item.id}">
+                            <td class="product-image">
+                                <img src="${item.picture}" class="img-fluid" alt="">
+                            </td>
+                            <td>
+                                <h6>${item.name}</h6>
+                            </td>
+                            <td>
+                                <h6 class="theme-color fw-bold">$${item.price}</h6>
+                            </td>
+                            <td>
+                                <h6>${item.stock}</h6>
+                            </td>
+                            <td>
+                                <h6 class="product-id-tooltip">Наведите для ID</h6>
+                                <div class="tooltip">ID: ${item.id}</div>
+                            </td>
+                            <td class="edit-delete">
+                                <i data-feather="edit" class="edit"></i>
+                                <i data-feather="trash-2" class="delete"></i>
+                            </td>
+                        </tr>
+                        `;
+                        tbody.append(row);
+                    });
+
+                    // Инициализация иконок Feather
+                    feather.replace();
+                });
+            }
+
+            // Инициальная загрузка
+            loadProducts();
+
+            $(document).on('click', '.edit', function() {
+                const row = $(this).closest('tr');
+                const id = row.data('id');
+                window.location.href = `/Admin/product/${id}`;
+            });
+
+
+            // Удаление продукта
+            $(document).on('click', '.delete', function() {
+                const row = $(this).closest('tr');
+                const id = row.data('id');
+
+                if (confirm('Удалить продукт?')) {
+                    $.ajax({
+                        url: `/Admin/deleteProduct/${id}`,
+                        type: 'DELETE',
+                        success: function() {
+                            row.fadeOut(300, () => row.remove());
+                        },
+                        error: function() {
+                            alert('Ошибка при удалении');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
 
     <!-- latest jquery-->
     <script src="../assets/js/jquery-3.6.0.min.js"></script>

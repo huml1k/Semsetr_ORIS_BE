@@ -13,7 +13,7 @@ namespace FastkartAPI.Infrastructure.Password
 
         public string GenerateToken(UserModel userEntity)
         {
-            Claim[] claims = [new("userId", userEntity.Id.ToString())];
+            Claim[] claims = [new("userId", userEntity.Id.ToString()), new("userName", userEntity.FullName.ToString())];
 
             var signingCredentials = new SigningCredentials(
                 new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_option.SecretKey)),

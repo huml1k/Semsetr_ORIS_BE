@@ -1,0 +1,639 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastKart - Создание продукта</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --primary: #4a6cf7;
+            --primary-dark: #3451b2;
+            --secondary: #6c757d;
+            --success: #28a745;
+            --danger: #dc3545;
+            --light: #f8f9fa;
+            --dark: #343a40;
+            --border: #dee2e6;
+            --shadow: 0 4px 6px rgba(0,0,0,0.1);
+            --vegetable: #7cbf5e;
+            --fruit: #f9a825;
+            --beverage: #29b6f6;
+            --meat: #e53935;
+            --seafood: #1e88e5;
+            --breakfast: #ffb300;
+            --dairy: #f5f5f5;
+            --frozen: #80deea;
+            --bisquits: #d7ccc8;
+            --snack: #ffcc80;
+            --grocery: #aed581;
+            --staples: #bcaaa4;
+            --wines: #ab47bc;
+            --alcohol: #5c6bc0;
+            --milk: #e0f7fa;
+            --dairies: #f5f5f5;
+            --pet: #8d6e63;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e7f1 100%);
+            color: var(--dark);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+            .logo i {
+                font-size: 2.5rem;
+                color: var(--primary);
+            }
+
+            .logo h1 {
+                font-size: 2.2rem;
+                color: var(--primary-dark);
+                font-weight: 700;
+            }
+
+        header p {
+            color: var(--secondary);
+            font-size: 1.1rem;
+        }
+
+        .form-container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .form-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--border);
+        }
+
+            .form-title i {
+                font-size: 1.8rem;
+                color: var(--primary);
+            }
+
+            .form-title h2 {
+                font-size: 1.8rem;
+                color: var(--dark);
+            }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+            .form-group label {
+                display: block;
+                margin-bottom: 8px;
+                font-weight: 600;
+                color: var(--dark);
+            }
+
+            .form-group .required::after {
+                content: " *";
+                color: var(--danger);
+            }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+
+            .form-control:focus {
+                outline: none;
+                border-color: var(--primary);
+                box-shadow: 0 0 0 3px rgba(74, 108, 247, 0.2);
+            }
+
+        textarea.form-control {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        select.form-control {
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236c757d' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 15px center;
+            background-size: 16px;
+            padding-right: 45px;
+        }
+
+        .select-multiple {
+            height: 200px;
+            padding: 10px;
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 8px;
+        }
+
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            border-radius: 20px;
+            background: #f0f4ff;
+            transition: all 0.2s;
+        }
+
+            .checkbox-item:hover {
+                background: #e1e8ff;
+                transform: translateY(-2px);
+            }
+
+            .checkbox-item input {
+                width: 18px;
+                height: 18px;
+                cursor: pointer;
+            }
+
+            .checkbox-item label {
+                margin-bottom: 0;
+                cursor: pointer;
+            }
+
+        .form-footer {
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+            margin-top: 20px;
+            padding-top: 25px;
+            border-top: 2px solid var(--border);
+        }
+
+        .btn {
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: none;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+        }
+
+            .btn-primary:hover {
+                background: var(--primary-dark);
+                transform: translateY(-2px);
+                box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            }
+
+        .btn-secondary {
+            background: var(--secondary);
+            color: white;
+        }
+
+            .btn-secondary:hover {
+                background: #5a6268;
+            }
+
+        .image-preview {
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .preview-container {
+            width: 150px;
+            height: 150px;
+            border: 2px dashed var(--border);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            margin-bottom: 15px;
+            background: var(--light);
+        }
+
+            .preview-container img {
+                max-width: 100%;
+                max-height: 100%;
+                display: none;
+            }
+
+            .preview-container i {
+                font-size: 3rem;
+                color: var(--secondary);
+            }
+
+        .form-hint {
+            font-size: 0.85rem;
+            color: var(--secondary);
+            margin-top: 5px;
+            font-style: italic;
+        }
+
+        .error-message {
+            color: var(--danger);
+            font-size: 0.85rem;
+            margin-top: 5px;
+            display: none;
+        }
+
+        .enum-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px;
+            margin-top: 8px;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin: 3px;
+            background: #e9ecef;
+        }
+
+        @@media (max-width: 768px) {
+            .form-grid
+
+        {
+            grid-template-columns: 1fr;
+        }
+
+        .form-footer {
+            flex-direction: column;
+        }
+
+        .btn {
+            width: 100%;
+        }
+
+        .enum-grid {
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-shopping-basket"></i>
+                <h1>FastKart</h1>
+            </div>
+            <p>Система управления продуктами - создание нового товара</p>
+        </header>
+
+        <div class="form-container">
+            <div class="form-title">
+                <i class="fas fa-plus-circle"></i>
+                <h2>Создать новый продукт</h2>
+            </div>
+
+            <form id="productForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="name" class="required">Название продукта</label>
+                        <input type="text" id="name" class="form-control" placeholder="Введите название продукта">
+                        <div class="error-message" id="nameError">Пожалуйста, введите название продукта</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="price" class="required">Цена (₽)</label>
+                        <input type="number" id="price" class="form-control" placeholder="0.00" step="0.01" min="0">
+                        <div class="error-message" id="priceError">Пожалуйста, введите корректную цену</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="picture">Изображение продукта (URL)</label>
+                        <input type="text" id="picture" class="form-control" placeholder="https://example.com/image.jpg">
+                        <div class="image-preview">
+                            <div class="preview-container">
+                                <i class="fas fa-image"></i>
+                                <img id="previewImage" src="" alt="Предпросмотр">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sku" class="required">SKU (Артикул)</label>
+                        <input type="text" id="sku" class="form-control" placeholder="Уникальный идентификатор">
+                        <div class="error-message" id="skuError">Пожалуйста, введите SKU продукта</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="required">Тип продукта</label>
+                        <div class="enum-grid">
+                            <div class="checkbox-item" style="background-color: var(--vegetable);">
+                                <input type="checkbox" id="Vegetable" name="type" value="Vegetable">
+                                <label for="Vegetable">Овощи</label>
+                            </div>
+                            <div class="checkbox-item" style="background-color: var(--fruit);">
+                                <input type="checkbox" id="Fruit" name="type" value="Fruit">
+                                <label for="Fruit">Фрукты</label>
+                            </div>
+                            <div class="checkbox-item" style="background-color: var(--beverage);">
+                                <input type="checkbox" id="Beverage" name="type" value="Beverage">
+                                <label for="Beverage">Напитки</label>
+                            </div>
+                            <div class="checkbox-item" style="background-color: var(--meat);">
+                                <input type="checkbox" id="Meat" name="type" value="Meat">
+                                <label for="Meat">Мясо</label>
+                            </div>
+                            <div class="checkbox-item" style="background-color: var(--seafood);">
+                                <input type="checkbox" id="Seafood" name="type" value="Seafood">
+                                <label for="Seafood">Морепродукты</label>
+                            </div>
+                            <div class="checkbox-item" style="background-color: var(--breakfast);">
+                                <input type="checkbox" id="Breakfast" name="type" value="Breakfast">
+                                <label for="Breakfast">Завтрак</label>
+                            </div>
+                            <div class="checkbox-item" style="background-color: var(--dairy);">
+                                <input type="checkbox" id="Dairy" name="type" value="Dairy">
+                                <label for="Dairy">Молочные продукты</label>
+                            </div>
+                            <div class="checkbox-item" style="background-color: var(--frozen);">
+                                <input type="checkbox" id="Forzen" name="type" value="Forzen">
+                                <label for="Forzen">Замороженные</label>
+                            </div>
+                            <div class="checkbox-item" style="background-color: var(--bisquits);">
+                                <input type="checkbox" id="Bisquits" name="type" value="Bisquits">
+                                <label for="Bisquits">Печенье</label>
+                            </div>
+                            <div class="checkbox-item" style="background-color: var(--snack);">
+                                <input type="checkbox" id="Snack" name="type" value="Snack">
+                                <label for="Snack">Снэки</label>
+                            </div>
+                            <div class="checkbox-item" style="background-color: var(--grocery);">
+                                <input type="checkbox" id="Grocery" name="type" value="Grocery">
+                                <label for="Grocery">Бакалея</label>
+                            </div>
+                            <div class="checkbox-item" style="background-color: var(--staples);">
+                                <input type="checkbox" id="Staples" name="type" value="Staples">
+                                <label for="Staples">Основные продукты</label>
+                            </div>
+                            <div class="checkbox-item" style="background-color: var(--wines);">
+                                <input type="checkbox" id="Wines" name="type" value="Wines">
+                                <label for="Wines">Вино</label>
+                            </div>
+                            <div class="checkbox-item" style="background-color: var(--alcohol);">
+                                <input type="checkbox" id="Alcohol" name="type" value="Alcohol">
+                                <label for="Alcohol">Алкоголь</label>
+                            </div>
+                            <div class="checkbox-item" style="background-color: var(--milk);">
+                                <input type="checkbox" id="Milk" name="type" value="Milk">
+                                <label for="Milk">Молоко</label>
+                            </div>
+                            <div class="checkbox-item" style="background-color: var(--dairies);">
+                                <input type="checkbox" id="Dairies" name="type" value="Dairies">
+                                <label for="Dairies">Молочные изделия</label>
+                            </div>
+                            <div class="checkbox-item" style="background-color: var(--pet);">
+                                <input type="checkbox" id="Pet" name="type" value="Pet">
+                                <label for="Pet">Товары для животных</label>
+                            </div>
+                        </div>
+                        <div class="error-message" id="typeError">Пожалуйста, выберите хотя бы один тип</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="weight">Вес</label>
+                        <div style="display: flex; gap: 10px;">
+                            <input type="number" id="weight" class="form-control" placeholder="0.00" step="0.01" min="0" style="flex: 3;">
+                            <select id="weightUnit" class="form-control" style="flex: 1;">
+                                <option value="g">г</option>
+                                <option value="ml">мл</option>
+                                <option value="L">л</option>
+                                <option value="KG">кг</option>
+                            </select>
+                        </div>
+                        <div class="form-hint">Оставьте пустым, если неприменимо</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description" class="required">Описание</label>
+                        <textarea id="description" class="form-control" placeholder="Подробное описание продукта"></textarea>
+                        <div class="error-message" id="descriptionError">Пожалуйста, введите описание продукта</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mfg" class="required">Дата производства</label>
+                        <input type="date" id="mfg" class="form-control">
+                        <div class="error-message" id="mfgError">Пожалуйста, выберите дату производства</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="stock" class="required">Количество на складе</label>
+                        <input type="number" id="stock" class="form-control" placeholder="0" min="0">
+                        <div class="error-message" id="stockError">Пожалуйста, введите количество на складе</div>
+                    </div>
+                </div>
+
+                <div class="form-footer">
+                    <button type="reset" class="btn btn-secondary">Очистить форму</button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-plus-circle"></i> Создать продукт
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+                document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('productForm');
+            const previewImage = document.getElementById('previewImage');
+            const previewIcon = document.querySelector('.preview-container i');
+            const pictureInput = document.getElementById('picture');
+
+            // Установка текущей даты как значения по умолчанию
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('mfg').value = today;
+
+            // Предпросмотр изображения
+            pictureInput.addEventListener('input', function() {
+                if (this.value) {
+                    previewImage.src = this.value;
+                    previewImage.style.display = 'block';
+                    previewIcon.style.display = 'none';
+                } else {
+                    previewImage.style.display = 'none';
+                    previewIcon.style.display = 'block';
+                }
+            });
+
+            form.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                let isValid = true;
+
+                // Проверка обязательных полей
+                const requiredFields = [
+                    { id: 'name', error: 'nameError' },
+                    { id: 'price', error: 'priceError' },
+                    { id: 'sku', error: 'skuError' },
+                    { id: 'description', error: 'descriptionError' },
+                    { id: 'mfg', error: 'mfgError' },
+                    { id: 'stock', error: 'stockError' }
+                ];
+
+                requiredFields.forEach(field => {
+                    const input = document.getElementById(field.id);
+                    const error = document.getElementById(field.error);
+
+                    if (!input.value.trim()) {
+                        error.style.display = 'block';
+                        input.style.borderColor = 'var(--danger)';
+                        isValid = false;
+                    } else {
+                        error.style.display = 'none';
+                        input.style.borderColor = '';
+                    }
+                });
+
+                // Проверка типа продукта
+                const typeCheckboxes = document.querySelectorAll('input[name="type"]:checked');
+                const typeError = document.getElementById('typeError');
+                if (typeCheckboxes.length === 0) {
+                    typeError.style.display = 'block';
+                    isValid = false;
+                } else {
+                    typeError.style.display = 'none';
+                }
+
+                // Проверка цены и количества
+                const priceInput = document.getElementById('price');
+                const stockInput = document.getElementById('stock');
+                const priceError = document.getElementById('priceError');
+                const stockError = document.getElementById('stockError');
+
+                if (priceInput.value && parseFloat(priceInput.value) <= 0) {
+                    priceError.textContent = 'Цена должна быть больше 0';
+                    priceError.style.display = 'block';
+                    priceInput.style.borderColor = 'var(--danger)';
+                    isValid = false;
+                }
+
+                if (stockInput.value && parseInt(stockInput.value) < 0) {
+                    stockError.textContent = 'Количество не может быть отрицательным';
+                    stockError.style.display = 'block';
+                    stockInput.style.borderColor = 'var(--danger)';
+                    isValid = false;
+                }
+
+                if (isValid) {
+                    const formData = {
+                        Name: document.getElementById('name').value,
+                        Price: parseFloat(document.getElementById('price').value),
+                        Picture: document.getElementById('picture').value,
+                        TypeItem: Array.from(document.querySelectorAll('input[name="type"]:checked')).map(cb => cb.value),
+                        Description: document.getElementById('description').value,
+                        Weight: document.getElementById('weight').value ?
+                            parseFloat(document.getElementById('weight').value) : 0,
+                        UnitEnums: document.getElementById('weightUnit').value,
+                        SKU: document.getElementById('sku').value,
+                        MFG: document.getElementById('mfg').value,
+                        Stock: parseInt(document.getElementById('stock').value)
+                    };
+
+                    try {
+                        const response = await fetch('/Admin/addProduct', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify(formData)
+                        });
+
+                        if (response.ok) {
+                            const result = await response.text();
+                            alert('Продукт успешно создан! ' + result);
+                            form.reset();
+                            previewImage.style.display = 'none';
+                            previewIcon.style.display = 'block';
+                            document.getElementById('mfg').value = today;
+                        } else {
+                            const error = await response.text();
+                            alert('Ошибка при создании продукта: ' + error);
+                        }
+                    } catch (error) {
+                        console.error('Ошибка при отправке запроса:', error);
+                        alert('Произошла ошибка при отправке данных на сервер');
+                    }
+                }
+            });
+
+            // Сброс ошибок при вводе
+            form.querySelectorAll('.form-control').forEach(input => {
+                input.addEventListener('input', function() {
+                    const error = this.nextElementSibling;
+                    if (error && error.classList.contains('error-message')) {
+                        error.style.display = 'none';
+                        this.style.borderColor = '';
+                    }
+                });
+            });
+
+            // Стилизация чекбоксов при нажатии
+            document.querySelectorAll('.checkbox-item').forEach(item => {
+                item.addEventListener('click', function(e) {
+                    if (e.target.tagName !== 'INPUT') {
+                        const checkbox = this.querySelector('input');
+                        checkbox.checked = !checkbox.checked;
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,623 @@
+﻿@model FastkartAPI.DataBase.Models.ItemStore
+@using FastkartAPI.DataBase.Models.Enums
+@{
+    ViewData["Title"] = "Edit Product";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Product</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #4361ee;
+            --secondary: #3f37c9;
+            --success: #4cc9f0;
+            --warning: #f72585;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --border: #dee2e6;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+            min-height: 100vh;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .header {
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            color: white;
+            padding: 20px 0;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .form-container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            margin-bottom: 30px;
+        }
+
+        .form-title {
+            color: var(--primary);
+            font-weight: 700;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+            .form-title::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 60px;
+                height: 4px;
+                background: var(--success);
+                border-radius: 2px;
+            }
+
+        .form-label {
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 8px;
+        }
+
+        .form-control, .form-select {
+            border: 2px solid var(--border);
+            border-radius: 10px;
+            padding: 12px 15px;
+            transition: all 0.3s;
+        }
+
+            .form-control:focus, .form-select:focus {
+                border-color: var(--primary);
+                box-shadow: 0 0 0 0.25rem rgba(67, 97, 238, 0.25);
+            }
+
+        .btn-submit {
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            border: none;
+            padding: 14px 30px;
+            font-weight: 600;
+            border-radius: 10px;
+            transition: all 0.3s;
+            width: 100%;
+            margin-top: 20px;
+            font-size: 1.1rem;
+            color: white;
+        }
+
+            .btn-submit:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 7px 20px rgba(67, 97, 238, 0.4);
+            }
+
+        .image-preview {
+            border-radius: 12px;
+            overflow: hidden;
+            border: 2px dashed #ced4da;
+            height: 220px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f8f9fa;
+            margin-bottom: 20px;
+        }
+
+            .image-preview img {
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: contain;
+            }
+
+            .image-preview i {
+                font-size: 3.5rem;
+                color: #adb5bd;
+            }
+
+        .notification {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            padding: 18px 28px;
+            border-radius: 12px;
+            color: white;
+            font-weight: 500;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            transform: translateX(150%);
+            transition: transform 0.4s ease;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+        }
+
+            .notification i {
+                font-size: 1.5rem;
+                margin-right: 15px;
+            }
+
+            .notification.show {
+                transform: translateX(0);
+            }
+
+            .notification.success {
+                background: linear-gradient(to right, #00b09b, #96c93d);
+            }
+
+            .notification.error {
+                background: linear-gradient(to right, #ff416c, #ff4b2b);
+            }
+
+        .type-badge {
+            cursor: pointer;
+            margin: 5px;
+            user-select: none;
+            transition: all 0.2s;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            background-color: #e9ecef;
+        }
+
+            .type-badge i {
+                margin-right: 6px;
+            }
+
+            .type-badge.selected {
+                background: linear-gradient(to right, var(--primary), var(--secondary));
+                color: white;
+                box-shadow: 0 4px 8px rgba(67, 97, 238, 0.3);
+            }
+
+        .unit-selector {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 10px;
+        }
+
+        .unit-option {
+            padding: 10px 22px;
+            border: 2px solid var(--border);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+        }
+
+            .unit-option i {
+                margin-right: 8px;
+            }
+
+            .unit-option.selected {
+                border-color: var(--primary);
+                background-color: rgba(67, 97, 238, 0.1);
+                color: var(--primary);
+            }
+
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255,255,255,0.9);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+        }
+
+        .spinner {
+            width: 70px;
+            height: 70px;
+            border: 5px solid rgba(67, 97, 238, 0.2);
+            border-radius: 50%;
+            border-top-color: var(--primary);
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+
+        @@keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .section-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin: 25px 0 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--border);
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading overlay -->
+    <div class="loading-overlay" id="loadingOverlay" style="display: none;">
+        <div class="spinner"></div>
+        <h3>Loading product data...</h3>
+    </div>
+
+    <div class="container">
+        <div class="header text-center">
+            <h1><i class="fas fa-edit me-2"></i>Edit Product</h1>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="form-container">
+                    <h2 class="form-title"><i class="fas fa-cube"></i>Edit Product Information</h2>
+
+                    <form id="editProductForm">
+                        <input type="hidden" id="Id" name="Id" value="@Model.Id">
+
+                        <div class="row">
+                            <!-- Left Column -->
+                            <div class="col-md-6">
+                                <div class="section-title">Product Image</div>
+
+                                <!-- Image Preview -->
+                                <div class="image-preview" id="imagePreview">
+                                    <i class="fas fa-image" id="placeholderIcon"></i>
+                                    <img id="previewImage" alt="Product Preview" style="display: none;">
+                                </div>
+
+                                <!-- Picture URL -->
+                                <div class="mb-4">
+                                    <label class="form-label">Picture URL</label>
+                                    <input type="text" class="form-control" id="Picture" name="Picture" placeholder="Enter image URL">
+                                </div>
+
+                                <div class="section-title">Basic Information</div>
+
+                                <!-- Product Name -->
+                                <div class="mb-4">
+                                    <label class="form-label">Product Name</label>
+                                    <input type="text" class="form-control" id="Name" name="Name" placeholder="Enter product name">
+                                </div>
+
+                                <!-- Description -->
+                                <div class="mb-4">
+                                    <label class="form-label">Description</label>
+                                    <textarea class="form-control" id="Description" name="Description" rows="3" placeholder="Enter product description"></textarea>
+                                </div>
+                            </div>
+
+                            <!-- Right Column -->
+                            <div class="col-md-6">
+                                <div class="section-title">Pricing & Inventory</div>
+
+                                <!-- Price -->
+                                <div class="mb-4">
+                                    <label class="form-label">Price ($)</label>
+                                    <input type="number" class="form-control" id="Price" name="Price" placeholder="0.00" step="0.01" min="0">
+                                </div>
+
+                                <!-- Stock -->
+                                <div class="mb-4">
+                                    <label class="form-label">Stock</label>
+                                    <input type="number" class="form-control" id="Stock" name="Stock" min="0">
+                                </div>
+
+                                <!-- SKU -->
+                                <div class="mb-4">
+                                    <label class="form-label">SKU</label>
+                                    <input type="text" class="form-control" id="SKU" name="SKU" placeholder="Enter SKU">
+                                </div>
+
+                                <div class="section-title">Specifications</div>
+
+                                <!-- Weight -->
+                                <div class="mb-4">
+                                    <label class="form-label">Weight</label>
+                                    <div class="input-group">
+                                        <input type="number" class="form-control" id="Weight" name="Weight" placeholder="0.00" step="0.01" min="0">
+                                        <span class="input-group-text">kg</span>
+                                    </div>
+                                </div>
+
+                                <!-- Manufacturing Date -->
+                                <div class="mb-4">
+                                    <label class="form-label">Manufacturing Date</label>
+                                    <input type="date" class="form-control" id="MFG" name="MFG">
+                                </div>
+
+                                <!-- Product Type -->
+                                <div class="mb-4">
+                                    <label class="form-label">Product Type</label>
+                                    <div class="d-flex flex-wrap" id="typeContainer">
+                                        @foreach (var type in Enum.GetValues(typeof(TypeItemEnum)))
+                                        {
+                                            <span class="type-badge" data-value="@type">
+                                                <i class="fas
+                                                        @(type.ToString() == "Vegetable" ? "fa-carrot" :
+                                                                                                       type.ToString() == "Fruit" ? "fa-apple-alt" :
+                                                                                                       type.ToString() == "Beverage" ? "fa-coffee" :
+                                                                                                       type.ToString() == "Meat" ? "fa-drumstick-bite" :
+                                                                                                       type.ToString() == "Seafood" ? "fa-fish" :
+                                                                                                       type.ToString() == "Breakfast" ? "fa-egg" :
+                                                                                                       type.ToString() == "Dairy" ? "fa-cheese" :
+                                                                                                       type.ToString() == "Frozen" ? "fa-snowflake" :
+                                                                                                       type.ToString() == "Bisquits" ? "fa-cookie" :
+                                                                                                       type.ToString() == "Snack" ? "fa-candy-cane" :
+                                                                                                       type.ToString() == "Grocery" ? "fa-shopping-basket" :
+                                                                                                       type.ToString() == "Staples" ? "fa-wheat-alt" :
+                                                                                                       type.ToString() == "Wines" ? "fa-wine-bottle" :
+                                                                                                       type.ToString() == "Alcohol" ? "fa-glass-whiskey" :
+                                                                                                       type.ToString() == "Milk" ? "fa-glass-milk" :
+                                                                                                       type.ToString() == "Dairies" ? "fa-cheese" :
+                                                                                                       type.ToString() == "Pet" ? "fa-paw" : "fa-tag")"></i>
+                                            @type
+                                        </span>
+                                                                                }
+                                    </div>
+                                </div>
+
+                                <!-- Unit -->
+                                <div class="mb-4">
+                                    <label class="form-label">Unit</label>
+                                    <div class="unit-selector">
+                                        @foreach (var unit in Enum.GetValues(typeof(UnitsEnum)))
+                                        {
+                                            <div class="unit-option" data-value="@unit">
+                                                <i class="fas
+                                                        @(unit.ToString() == "ml" ? "fa-prescription-bottle" :
+                                                                                                       unit.ToString() == "g" ? "fa-weight" :
+                                                                                                       unit.ToString() == "L" ? "fa-wine-bottle" :
+                                                                                                       unit.ToString() == "KG" ? "fa-weight-hanging" : "fa-ruler")"></i>
+                                            @unit
+                                        </div>
+                                                                                }
+                                    </div>
+                                    <input type="hidden" id="UnitEnums" name="UnitEnums">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-submit" id="saveBtn">
+                            <i class="fas fa-save me-2"></i>Save Changes
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification -->
+    <div class="notification" id="notification"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // DOM elements
+        const imagePreview = document.getElementById('imagePreview');
+        const previewImage = document.getElementById('previewImage');
+        const placeholderIcon = document.getElementById('placeholderIcon');
+        const notification = document.getElementById('notification');
+        const loadingOverlay = document.getElementById('loadingOverlay');
+        const editForm = document.getElementById('editProductForm');
+
+        // Update selected types as hidden inputs
+        function updateTypeItemInput() {
+            // Remove existing TypeItem inputs
+            document.querySelectorAll('input[name="TypeItem"]').forEach(el => el.remove());
+
+            const selectedTypes = Array.from(document.querySelectorAll('.type-badge.selected'))
+                .map(el => el.getAttribute('data-value'));
+
+            // Create new hidden inputs for each selected type
+            selectedTypes.forEach(type => {
+                const input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = 'TypeItem';
+                input.value = type;
+                editForm.appendChild(input);
+            });
+        }
+
+        // Initialize form with server data
+        function initForm(product) {
+            // Populate form fields
+            document.getElementById('Id').value = product.id;
+            document.getElementById('Picture').value = product.picture;
+            document.getElementById('Name').value = product.name;
+            document.getElementById('Price').value = product.price;
+            document.getElementById('Description').value = product.description;
+            document.getElementById('Weight').value = product.weight;
+            document.getElementById('SKU').value = product.sku;
+
+            // Format date for input field (DateOnly to yyyy-MM-dd)
+            const mfgDate = new Date(product.mfg);
+            const formattedDate = mfgDate.toISOString().split('T')[0];
+            document.getElementById('MFG').value = formattedDate;
+
+            document.getElementById('Stock').value = product.stock;
+            document.getElementById('UnitEnums').value = product.unitEnums;
+
+            // Set image preview
+            updateImagePreview(product.picture);
+
+            // Set product types
+            if (product.typeItem) {
+                const types = product.typeItem.split(',');
+                types.forEach(type => {
+                    const badge = document.querySelector(`.type-badge[data-value="${type.trim()}"]`);
+                    if (badge) {
+                        badge.classList.add('selected');
+                    }
+                });
+                updateTypeItemInput();
+            }
+
+            // Set unit
+            const unitOption = document.querySelector(`.unit-option[data-value="${product.unitEnums}"]`);
+            if (unitOption) {
+                unitOption.classList.add('selected');
+            }
+        }
+
+        // Update image preview
+        function updateImagePreview(url) {
+            if (url) {
+                previewImage.src = url;
+                previewImage.style.display = 'block';
+                placeholderIcon.style.display = 'none';
+            } else {
+                previewImage.style.display = 'none';
+                placeholderIcon.style.display = 'block';
+            }
+        }
+
+        // Show notification
+        function showNotification(message, isSuccess) {
+            notification.innerHTML = `<i class="fas ${isSuccess ? 'fa-check-circle' : 'fa-exclamation-triangle'}"></i> ${message}`;
+            notification.className = 'notification';
+            notification.classList.add(isSuccess ? 'success' : 'error', 'show');
+
+            setTimeout(() => {
+                notification.classList.remove('show');
+            }, 3000);
+        }
+
+        // Validate form
+        function validateForm() {
+            const requiredFields = [
+                'Picture', 'Name', 'Price', 'Weight',
+                'SKU', 'MFG', 'Stock', 'UnitEnums'
+            ];
+
+            for (const field of requiredFields) {
+                const value = document.getElementById(field).value;
+                if (!value) {
+                    showNotification(`Please fill in the ${field} field`, false);
+                    return false;
+                }
+            }
+
+            // Validate at least one type is selected
+            const selectedTypes = document.querySelectorAll('.type-badge.selected');
+            if (selectedTypes.length === 0) {
+                showNotification('Please select at least one product type', false);
+                return false;
+            }
+
+            // Validate price and weight
+            if (parseFloat(document.getElementById('Price').value) <= 0) {
+                showNotification('Price must be greater than 0', false);
+                return false;
+            }
+
+            if (parseFloat(document.getElementById('Weight').value) <= 0) {
+                showNotification('Weight must be greater than 0', false);
+                return false;
+            }
+
+            return true;
+        }
+
+        // Handle form submission
+        async function handleSubmit(e) {
+            e.preventDefault();
+
+            // Update type item value before validation
+            updateTypeItemInput();
+
+            if (!validateForm()) return;
+
+            // Show loading overlay
+            loadingOverlay.style.display = 'flex';
+
+            try {
+                // Prepare form data
+                const formData = new FormData(editForm);
+
+                // Send update request
+                const response = await fetch('/Admin/updateProduct', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (response.ok) {
+                    showNotification('Product updated successfully!', true);
+                    // Optionally fetch updated product data if needed
+                    const updatedProduct = await response.json();
+                    initForm(updatedProduct);
+                } else {
+                    const error = await response.text();
+                    showNotification(`Update failed: ${error}`, false);
+                }
+            } catch (error) {
+                console.error('Update error:', error);
+                showNotification('Failed to update product. Please try again.', false);
+            } finally {
+                loadingOverlay.style.display = 'none';
+            }
+        }
+
+        // Event listeners
+        document.getElementById('Picture').addEventListener('input', function() {
+            updateImagePreview(this.value);
+        });
+
+        // Product type selection
+        document.querySelectorAll('.type-badge').forEach(badge => {
+            badge.addEventListener('click', function() {
+                this.classList.toggle('selected');
+                updateTypeItemInput();
+            });
+        });
+
+        // Unit selection
+        document.querySelectorAll('.unit-option').forEach(option => {
+            option.addEventListener('click', function() {
+                document.querySelectorAll('.unit-option').forEach(el => {
+                    el.classList.remove('selected');
+                });
+                this.classList.add('selected');
+                document.getElementById('UnitEnums').value = this.getAttribute('data-value');
+            });
+        });
+
+        // Form submission
+        editForm.addEventListener('submit', handleSubmit);
+
+        // Initialize form with server data
+        document.addEventListener('DOMContentLoaded', () => {
+            // Convert server model to JSON with proper encoding
+            const productData = {
+                id: '@Model.Id',
+                picture: '@Html.Raw(Model.Picture)',
+                typeItem: '@(Model.TypeItem != null ? Html.Raw(string.Join(",", Model.TypeItem)) : "")',
+                unitEnums: '@Model.UnitEnums',
+                name: '@Html.Raw(Model.Name)',
+                price: @Model.Price,
+                description: '@Html.Raw(Model.Description)',
+                weight: @Model.Weight,
+                sku: '@Html.Raw(Model.SKU)',
+                mfg: '@Model.MFG.ToString("yyyy-MM-dd")',
+                stock: @Model.Stock
+            };
+
+            initForm(productData);
+        });
+    </script>
+</body>
+</html>

@@ -1,89 +1,185 @@
-﻿<div class="sidebar-col">
+﻿@using FastkartAPI.DataBase.Models.Enums
+<div class="sidebar-col">
     <div class="category-menu">
         <a href="/home/index" class="web-logo nav-logo">
             <img src="../assets/images/logo/5.png" class="img-fluid blur-up lazyload" alt="">
         </a>
         <ul>
-            <li>
-                <div class="category-list">
-                    <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/vegetable.svg" class="blur-up lazyload" alt="">
-                    <h5>
-                        <a href="shop-left-sidebar.html">Vegetables & Fruit</a>
-                    </h5>
-                </div>
-            </li>
-            <li>
-                <div class="category-list">
-                    <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/cup.svg" class="blur-up lazyload" alt="">
-                    <h5>
-                        <a href="shop-left-sidebar.html">Beverages</a>
-                    </h5>
-                </div>
-            </li>
-            <li>
-                <div class="category-list">
-                    <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/meats.svg" class="blur-up lazyload" alt="">
-                    <h5>
-                        <a href="shop-left-sidebar.html">Meats & Seafood</a>
-                    </h5>
-                </div>
-            </li>
-            <li>
-                <div class="category-list">
-                    <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/breakfast.svg" class="blur-up lazyload" alt="">
-                    <h5>
-                        <a href="shop-left-sidebar.html">Breakfast & Dairy</a>
-                    </h5>
-                </div>
-            </li>
-            <li>
-                <div class="category-list">
-                    <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/frozen.svg" class="blur-up lazyload" alt="">
-                    <h5>
-                        <a href="shop-left-sidebar.html">Frozen Foods</a>
-                    </h5>
-                </div>
-            </li>
-            <li>
-                <div class="category-list">
-                    <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/biscuit.svg" class="blur-up lazyload" alt="">
-                    <h5>
-                        <a href="shop-left-sidebar.html">Biscuits & Snacks</a>
-                    </h5>
-                </div>
-            </li>
-            <li>
-                <div class="category-list">
-                    <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/grocery.svg" class="blur-up lazyload" alt="">
-                    <h5>
-                        <a href="shop-left-sidebar.html">Grocery & Staples</a>
-                    </h5>
-                </div>
-            </li>
-            <li>
-                <div class="category-list">
-                    <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/drink.svg" class="blur-up lazyload" alt="">
-                    <h5>
-                        <a href="shop-left-sidebar.html">Wines & Alcohol Drinks</a>
-                    </h5>
-                </div>
-            </li>
-            <li>
-                <div class="category-list">
-                    <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/milk.svg" class="blur-up lazyload" alt="">
-                    <h5>
-                        <a href="shop-left-sidebar.html">Milk & Dairies</a>
-                    </h5>
-                </div>
-            </li>
-            <li class="pb-30">
-                <div class="category-list">
-                    <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/pet.svg" class="blur-up lazyload" alt="">
-                    <h5>
-                        <a href="shop-left-sidebar.html">Pet Foods</a>
-                    </h5>
-                </div>
-            </li>
+            @{
+                // Определяем группы категорий
+                var categoryGroups = new[]
+                {
+                        new
+                        {
+                        Name = "Vegetables & Fruit",
+                        Icon = "https://themes.pixelstrap.com/fastkart/assets/svg/1/vegetable.svg",
+                        Categories = new[] { TypeItemEnum.Vegetable, TypeItemEnum.Fruit }
+                        },
+                        new
+                        {
+                        Name = "Beverages",
+                        Icon = "https://themes.pixelstrap.com/fastkart/assets/svg/1/cup.svg",
+                        Categories = new[] { TypeItemEnum.Beverage }
+                        },
+                        new
+                        {
+                        Name = "Meats & Seafood",
+                        Icon = "https://themes.pixelstrap.com/fastkart/assets/svg/1/meats.svg",
+                        Categories = new[] { TypeItemEnum.Meat, TypeItemEnum.Seafood }
+                        },
+                        new
+                        {
+                        Name = "Breakfast & Dairy",
+                        Icon = "https://themes.pixelstrap.com/fastkart/assets/svg/1/breakfast.svg",
+                        Categories = new[] { TypeItemEnum.Breakfast, TypeItemEnum.Dairy }
+                        },
+                        new
+                        {
+                        Name = "Frozen Foods",
+                        Icon = "https://themes.pixelstrap.com/fastkart/assets/svg/1/frozen.svg",
+                        Categories = new[] { TypeItemEnum.Forzen }
+                        },
+                        new
+                        {
+                        Name = "Biscuits & Snacks",
+                        Icon = "https://themes.pixelstrap.com/fastkart/assets/svg/1/biscuit.svg",
+                        Categories = new[] { TypeItemEnum.Bisquits, TypeItemEnum.Snack }
+                        },
+                        new
+                        {
+                        Name = "Grocery & Staples",
+                        Icon = "https://themes.pixelstrap.com/fastkart/assets/svg/1/grocery.svg",
+                        Categories = new[] { TypeItemEnum.Grocery, TypeItemEnum.Staples }
+                        },
+                        new
+                        {
+                        Name = "Wines & Alcohol Drinks",
+                        Icon = "https://themes.pixelstrap.com/fastkart/assets/svg/1/drink.svg",
+                        Categories = new[] { TypeItemEnum.Wines, TypeItemEnum.Alcohol }
+                        },
+                        new
+                        {
+                        Name = "Milk & Dairies",
+                        Icon = "https://themes.pixelstrap.com/fastkart/assets/svg/1/milk.svg",
+                        Categories = new[] { TypeItemEnum.Milk, TypeItemEnum.Dairies }
+                        },
+                        new
+                        {
+                        Name = "Pet Foods",
+                        Icon = "https://themes.pixelstrap.com/fastkart/assets/svg/1/pet.svg",
+                        Categories = new[] { TypeItemEnum.Pet }
+                        }
+                        };
+            }
+
+            @foreach (var group in categoryGroups)
+            {
+                <li>
+                    <div class="category-list">
+                        <img src="@group.Icon" class="blur-up lazyload" alt="">
+                        <h5>
+                            <a href="javascript:void(0);" class="category-link"
+                               data-categories="@string.Join(",", group.Categories)">
+                                @group.Name
+                            </a>
+                        </h5>
+                    </div>
+                </li>
+            }
         </ul>
     </div>
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const productsContainer = document.getElementById('productsContainer');
+
+        // Обработка кликов по категориям
+        document.querySelectorAll('.category-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const categories = this.getAttribute('data-categories');
+                const categoryName = this.textContent.trim();
+
+                // Если на странице продукта - переходим на главную
+                if (!productsContainer) {
+                    window.location.href = `/home/index?categories=${encodeURIComponent(categories)}`;
+                    return;
+                }
+
+                loadProductsByCategory(categories, categoryName);
+            });
+        });
+
+        // Функция для загрузки продуктов по категории
+        function loadProductsByCategory(categories, categoryName) {
+                // В функции loadProductsByCategory в _Menu.cshtml
+    if (!productsContainer) {
+        // Переходим на главную с параметрами категории
+        window.location.href = `/home/index?categories=${encodeURIComponent(categories)}&categoryName=${encodeURIComponent(categoryName)}`;
+        return;
+    }
+
+            productsContainer.innerHTML = '<div class="col-12 text-center py-5"><i class="fa fa-spinner fa-spin fa-3x"></i></div>';
+
+            $.ajax({
+                url: '/Home/GetByCategories',
+                type: 'GET',
+                data: { categories: categories },
+                success: function(data) {
+                    $('#productsContainer').html(data);
+                    feather.replace();
+                    new WOW().init();
+
+                    // Обновить заголовок
+                    if (document.getElementById('categoryTitle')) {
+                        document.getElementById('categoryTitle').innerText = categoryName;
+                        document.getElementById('categoryDescription').innerText = 'Products filtered by category';
+                    }
+                },
+                error: function() {
+                    productsContainer.innerHTML = '<div class="col-12 text-center py-5"><h4 class="text-danger">Error loading products</h4><p>Please try again later</p></div>';
+                }
+            });
+        }
+
+        // Загрузка всех продуктов при клике на логотип
+        document.querySelector('.nav-logo')?.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            // Если на странице продукта - переходим на главную
+            if (!productsContainer) {
+                window.location.href = '/home/index';
+                return;
+            }
+
+            loadAllProducts();
+        });
+
+        // Функция загрузки всех продуктов
+        function loadAllProducts() {
+            if (!productsContainer) return;
+
+            productsContainer.innerHTML = '<div class="col-12 text-center py-5"><i class="fa fa-spinner fa-spin fa-3x"></i></div>';
+
+            $.ajax({
+                url: '/Home/GetAllProducts',
+                type: 'GET',
+                success: function(data) {
+                    productsContainer.innerHTML = data;
+                    feather.replace();
+                    new WOW().init();
+
+                    // Обновить заголовок
+                    if (document.getElementById('categoryTitle')) {
+                        document.getElementById('categoryTitle').innerText = 'All Products';
+                        document.getElementById('categoryDescription').innerText = 'All available products';
+                    }
+                },
+                error: function() {
+                    productsContainer.innerHTML = '<div class="col-12 text-center py-5"><h4 class="text-danger">Error loading products</h4><p>Please try again later</p></div>';
+                }
+            });
+        }
+    });
+</script>

@@ -1,0 +1,580 @@
+@using FastkartAPI.DataBase.Models.Enums
+@model FastkartAPI.DataBase.Models.UserModel
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fastkart">
+    <meta name="keywords" content="Fastkart">
+    <meta name="author" content="Fastkart">
+    <link rel="icon" href="~/assets/images/favicon/1.png" type="image/x-icon">
+    <title>On-demand last-mile delivery</title>
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800;900&amp;display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap">
+
+    <!-- bootstrap css -->
+    <link id="rtl-link" rel="stylesheet" type="text/css" href="~/assets/css/vendors/bootstrap.css">
+
+    <!-- Iconly css -->
+    <link rel="stylesheet" type="text/css" href="~/assets/css/bulk-style.css">
+
+    <!-- Template css -->
+    <link id="color-link" rel="stylesheet" type="text/css" href="~/assets/css/style.css">
+</head>
+
+<body>
+
+<!-- Loader Start -->
+<!-- Loader End -->
+
+<!-- Breadcrumb Section Start -->
+<section class="breadcrumb-section pt-0">
+    <div class="container-fluid-lg">
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumb-contain">
+                    <h2>User Dashboard</h2>
+                    <nav>
+                        <ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item">
+                                <a href="index.html">
+                                    <i class="fa-solid fa-house"></i>
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item active">User Dashboard</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Breadcrumb Section End -->
+
+<!-- User Dashboard Section Start -->
+<section class="user-dashboard-section section-b-space">
+    <div class="container-fluid-lg">
+        <div class="row">
+            <div class="col-xxl-3 col-lg-4">
+                <div class="dashboard-left-sidebar">
+                    <div class="close-button d-flex d-lg-none">
+                        <button class="close-sidebar">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="profile-box">
+                        <div class="cover-image">
+                            <img src="~/assets/images/inner-page/cover-img.jpg" class="img-fluid blur-up lazyload"
+                                 alt="">
+                        </div>
+
+                        <div class="profile-contain">
+                            <div class="profile-image">
+                                <div class="position-relative">
+                                    <img src="~/assets/images/inner-page/user/1.jpg"
+                                         class="blur-up lazyload update_img" alt="">
+                                    <div class="cover-icon">
+                                        <i class="fa-solid fa-pen">
+                                            <input type="file" onchange="readURL(this,0)">
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="profile-name">
+                                <h3>@Model.FullName</h3>
+                                <h6 class="text-content">@Model.Email</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="nav nav-pills user-nav-pills" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-dashboard-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-dashboard" type="button"><i data-feather="home"></i>
+                                DashBoard</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-order-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-order" type="button"><i
+                                    data-feather="shopping-bag"></i>Order</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile" type="button" role="tab"><i data-feather="user"></i>
+                                Profile</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-security-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-security" type="button" role="tab"><i
+                                    data-feather="shield"></i>
+                                Privacy</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-xxl-9 col-lg-8">
+                <button class="btn left-dashboard-show btn-animation btn-md fw-bold d-block mb-4 d-lg-none">Show
+                    Menu</button>
+                <div class="dashboard-right-sidebar">
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-dashboard" role="tabpanel">
+                            <div class="dashboard-home">
+                                <div class="title">
+                                    <h2>My Dashboard</h2>
+                                    <span class="title-leaf">
+                                            <svg class="icon-width bg-gray">
+                                                <use xlink:href="https://themes.pixelstrap.com/fastkart/assets/svg/leaf.svg#leaf"></use>
+                                            </svg>
+                                        </span>
+                                </div>
+
+                                <div class="dashboard-user-name">
+                                    <h6 class="text-content">Hello, <b class="text-title">@Model.FullName</b></h6>
+                                    <p class="text-content">From your My Account Dashboard you have the ability to
+                                        view a snapshot of your recent account activity and update your account
+                                        information. Select a link below to view or edit information.</p>
+                                </div>
+
+                                <div class="total-box">
+                                    <div class="row g-sm-4 g-3">
+                                        <div class="col-xxl-4 col-lg-6 col-md-4 col-sm-6">
+                                            <div class="total-contain">
+                                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/svg/order.svg"
+                                                     class="img-1 blur-up lazyload" alt="">
+                                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/svg/order.svg" class="blur-up lazyload"
+                                                     alt="">
+                                                <div class="total-detail">
+                                                    <h5>Total Order</h5>
+                                                    <h3>3658</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xxl-4 col-lg-6 col-md-4 col-sm-6">
+                                            <div class="total-contain">
+                                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/svg/pending.svg"
+                                                     class="img-1 blur-up lazyload" alt="">
+                                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/svg/pending.svg" class="blur-up lazyload"
+                                                     alt="">
+                                                <div class="total-detail">
+                                                    <h5>Total Pending Order</h5>
+                                                    <h3>254</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="dashboard-title">
+                                    <h3>Account Information</h3>
+                                </div>
+
+                                <div class="row g-4">
+                                    <div class="col-xxl-6">
+                                        <div class="dashboard-content-title">
+                                            <h4>Contact Information <a href="javascript:void(0)"
+                                                                       data-bs-toggle="modal" data-bs-target="#editProfile">Edit</a>
+                                            </h4>
+                                        </div>
+                                        <div class="dashboard-detail">
+                                            <h6 class="text-content">@Model.FullName</h6>
+                                            <h6 class="text-content">@Model.Email</h6>
+                                            <h6 class="text-content">Phone: @(Model.Phone != 0 ? Model.Phone.ToString() : "Not specified")</h6>
+                                            <a href="javascript:void(0)">Change Password</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xxl-6">
+                                        <div class="dashboard-content-title">
+                                            <h4>Newsletters <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                               data-bs-target="#editProfile">Edit</a></h4>
+                                        </div>
+                                        <div class="dashboard-detail">
+                                            <h6 class="text-content">You are currently not subscribed to any
+                                                newsletter</h6>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="dashboard-content-title">
+                                            <h4>Address Book <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                                data-bs-target="#editProfile">Edit</a></h4>
+                                        </div>
+
+                                        <div class="row g-4">
+                                            <div class="col-xxl-6">
+                                                <div class="dashboard-detail">
+                                                    <h6 class="text-content">Default Billing Address</h6>
+                                                    <h6 class="text-content">@(!string.IsNullOrEmpty(Model.Address) ? Model.Address : "You have not set a default billing address.")</h6>
+                                                    <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                       data-bs-target="#editProfile">Edit Address</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xxl-6">
+                                                <div class="dashboard-detail">
+                                                    <h6 class="text-content">Default Shipping Address</h6>
+                                                    <h6 class="text-content">@(!string.IsNullOrEmpty(Model.Address) ? Model.Address : "You have not set a default shipping address.")</h6>
+                                                    <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                       data-bs-target="#editProfile">Edit Address</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="pills-order" role="tabpanel">
+                            <div class="dashboard-order">
+                                <!-- Order content remains the same -->
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel">
+                            <div class="dashboard-profile">
+                                <div class="title">
+                                    <h2>My Profile</h2>
+                                    <span class="title-leaf">
+                                            <svg class="icon-width bg-gray">
+                                                <use xlink:href="https://themes.pixelstrap.com/fastkart/assets/svg/leaf.svg#leaf"></use>
+                                            </svg>
+                                        </span>
+                                </div>
+
+                                <div class="profile-detail dashboard-bg-box">
+                                    <div class="dashboard-title">
+                                        <h3>Profile Name</h3>
+                                    </div>
+                                    <div class="profile-name-detail">
+                                        <div class="d-sm-flex align-items-center d-block">
+                                            <h3>@Model.FullName</h3>
+                                        </div>
+
+                                        <a href="javascript:void(0)" data-bs-toggle="modal"
+                                           data-bs-target="#editProfile">Edit</a>
+                                    </div>
+
+                                    <div class="location-profile">
+                                        <ul>
+                                            <li>
+                                                <div class="location-box">
+                                                    <i data-feather="map-pin"></i>
+                                                    <h6>@(!string.IsNullOrEmpty(Model.Address) ? Model.Address : "Address not specified")</h6>
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="location-box">
+                                                    <i data-feather="mail"></i>
+                                                    <h6>@Model.Email</h6>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="profile-description">
+                                        <p>Residences can be classified by and how they are connected to
+                                            neighbouring residences and land. Different types of housing tenure can
+                                            be used for the same physical type.</p>
+                                    </div>
+                                </div>
+
+                                <div class="profile-about dashboard-bg-box">
+                                    <div class="row">
+                                        <div class="col-xxl-7">
+                                            <div class="dashboard-title mb-3">
+                                                <h3>Profile About</h3>
+                                            </div>
+
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>Gender :</td>
+                                                        <td>@Model.Sex</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Birthday :</td>
+                                                        <td>@Model.DateOnly.ToString("dd/MM/yyyy")</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Phone Number :</td>
+                                                        <td>
+                                                            <a href="javascript:void(0)">@(Model.Phone != 0 ? Model.Phone.ToString() : "Not specified")</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Address :</td>
+                                                        <td>@(!string.IsNullOrEmpty(Model.Address) ? Model.Address : "Address not specified")</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            <div class="dashboard-title mb-3">
+                                                <h3>Login Details</h3>
+                                            </div>
+
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>Email :</td>
+                                                        <td>
+                                                            <a href="javascript:void(0)">@Model.Email
+                                                                <span data-bs-toggle="modal"
+                                                                      data-bs-target="#editProfile">Edit</span></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Password :</td>
+                                                        <td>
+                                                            <a href="javascript:void(0)">●●●●●●●●
+                                                                <span data-bs-toggle="modal"
+                                                                      data-bs-target="#editProfile">Edit</span></a>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xxl-5">
+                                            <div class="profile-image">
+                                                <img src="../assets/images/inner-page/dashboard-profile.png"
+                                                     class="img-fluid blur-up lazyload" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="pills-security" role="tabpanel">
+                            <!-- Security content remains the same -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- User Dashboard Section End -->
+
+<!-- Edit Profile Modal -->
+<div class="modal fade theme-modal" id="editProfile" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-fullscreen-sm-down">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Edit Profile</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row g-4">
+                    <div class="col-xxl-6">
+                        <div class="form-floating theme-form-floating">
+                            <input type="text" class="form-control" id="editFullName" value="@Model.FullName">
+                            <label for="editFullName">Full Name</label>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-6">
+                        <div class="form-floating theme-form-floating">
+                            <input type="email" class="form-control" id="editEmail" value="@Model.Email">
+                            <label for="editEmail">Email</label>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-6">
+                        <div class="form-floating theme-form-floating">
+                            <select class="form-select" id="editGender">
+                                <option value="0" selected="@(Model.Sex == SexEnum.None)">Not specified</option>
+                                <option value="1" selected="@(Model.Sex == SexEnum.Male)">Male</option>
+                                <option value="2" selected="@(Model.Sex == SexEnum.Female)">Female</option>
+                            </select>
+                            <label for="editGender">Gender</label>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-6">
+                        <div class="form-floating theme-form-floating">
+                            <input type="date" class="form-control" id="editBirthDate"
+                                   value="@Model.DateOnly.ToString("yyyy-MM-dd")">
+                            <label for="editBirthDate">Birth Date</label>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-6">
+                        <div class="form-floating theme-form-floating">
+                            <input type="tel" class="form-control" id="editPhone"
+                                   value="@(Model.Phone != 0 ? Model.Phone.ToString() : "")">
+                            <label for="editPhone">Phone Number</label>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-6">
+                        <div class="form-floating theme-form-floating">
+                            <select class="form-select" id="editRole">
+                                <option value="0" selected="@(Model.Role == RoleEnum.Buyer)">Buyer</option>
+                            </select>
+                            <label for="editRole">Role</label>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-floating theme-form-floating">
+                            <textarea class="form-control" id="editAddress" style="height: 100px">@Model.Address</textarea>
+                            <label for="editAddress">Address</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="saveProfileBtn">Save Changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- latest jquery-->
+<script src="~/assets/js/jquery-3.6.0.min.js"></script>
+
+<!-- jquery ui-->
+<script src="~/assets/js/jquery-ui.min.js"></script>
+
+<!-- Bootstrap js-->
+<script src="~/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="~/assets/js/bootstrap/bootstrap-notify.min.js"></script>
+<script src="~/assets/js/bootstrap/popper.min.js"></script>
+
+<!-- feather icon js-->
+<script src="~/assets/js/feather/feather.min.js"></script>
+<script src="~/assets/js/feather/feather-icon.js"></script>
+
+<!-- Lazyload Js -->
+<script src="~/assets/js/lazysizes.min.js"></script>
+
+<!-- Slick js-->
+<script src="~/assets/js/slick/slick.js"></script>
+<script src="~/assets/js/slick/custom_slick.js"></script>
+
+<!-- Quantity js -->
+<script src="~/assets/js/quantity-2.js"></script>
+
+<!-- Nav & tab upside js -->
+<script src="~/assets/js/nav-tab.js"></script>
+
+<!-- script js -->
+<script src="~/assets/js/script.js"></script>
+
+<!-- theme setting js -->
+<script src="~/assets/js/theme-setting.js"></script>
+
+<script>
+    $(document).ready(function() {
+        // Handle save profile button click
+        $('#saveProfileBtn').click(function() {
+            const updatedUser = {
+                Id: '@Model.Id',
+                FullName: $('#editFullName').val(),
+                Email: $('#editEmail').val(),
+                Sex: parseInt($('#editGender').val()),
+                DateOnly: $('#editBirthDate').val(), // Format "YYYY-MM-DD"
+                Phone: $('#editPhone').val() ? parseInt($('#editPhone').val()) : 0,
+                Address: $('#editAddress').val(),
+                Role: parseInt($('#editRole').val()),
+                Password: "@Model.Password" // Preserve existing password
+            };
+
+            // Show loading state
+            const $btn = $(this);
+            $btn.html('<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Saving...');
+            $btn.prop('disabled', true);
+
+            $.ajax({
+                url: '@Url.Action("UpdateUser", "User")',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify(updatedUser),
+                success: function(response) {
+                    if (response.message === "Profile updated") {
+                        // Update UI with new data
+                        $('.profile-name h3').text(updatedUser.FullName);
+                        $('.profile-name h6').text(updatedUser.Email);
+                        $('.dashboard-user-name b').text(updatedUser.FullName);
+                        $('.dashboard-detail h6:first').text(updatedUser.FullName);
+                        $('.dashboard-detail h6:eq(1)').text(updatedUser.Email);
+
+                        // Update other fields
+                        $('td:contains("Gender")').next().text(
+                            updatedUser.Sex === 1 ? "Male" :
+                                updatedUser.Sex === 2 ? "Female" : "Not specified"
+                        );
+
+                        // Format date as DD/MM/YYYY
+                        const birthDate = new Date(updatedUser.DateOnly);
+                        const formattedDate = `${birthDate.getDate().toString().padStart(2, '0')}/${(birthDate.getMonth() + 1).toString().padStart(2, '0')}/${birthDate.getFullYear()}`;
+                        $('td:contains("Birthday")').next().text(formattedDate);
+
+                        $('td:contains("Phone Number")').next().find('a').text(
+                            updatedUser.Phone || "Not specified"
+                        );
+                        $('td:contains("Address")').next().text(
+                            updatedUser.Address || "Address not specified"
+                        );
+
+                        // Close modal
+                        $('#editProfile').modal('hide');
+                        showAlert('Profile updated successfully!', 'success');
+                    } else {
+                        showAlert('Error: ' + response.message, 'danger');
+                    }
+                },
+                error: function(xhr) {
+                    let errorMsg = 'Failed to update profile';
+                    if (xhr.responseJSON && xhr.responseJSON.message) {
+                        errorMsg += ': ' + xhr.responseJSON.message;
+                    }
+                    showAlert(errorMsg, 'danger');
+                },
+                complete: function() {
+                    $btn.html('Save Changes');
+                    $btn.prop('disabled', false);
+                }
+            });
+        });
+
+        // Function to show alert
+        function showAlert(message, type) {
+            // Remove existing alerts
+            $('.alert-dashboard').remove();
+
+            const alert = `
+                <div class="alert alert-${type} alert-dashboard alert-dismissible fade show" role="alert">
+                    ${message}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            `;
+
+            $('.dashboard-right-sidebar').prepend(alert);
+            setTimeout(() => $('.alert-dashboard').alert('close'), 5000);
+        }
+    });
+</script>
+</body>
+</html>

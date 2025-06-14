@@ -1,0 +1,67 @@
+﻿@model IEnumerable<FastkartAPI.Contracts.DTOs.ProductCardDTO>
+
+@if (Model != null && Model.Any())
+{
+    foreach (var product in Model)
+    {
+        <div>
+            <div class="product-box product-white-bg wow fadeIn" id="@product.Id">
+                <div class="product-image">
+                    <a href="/items/product/@product.Id">
+                        <img src="@product.Picture" class="img-fluid blur-up lazyload" alt="">
+                    </a>
+                    <ul class="product-option">
+                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="View">
+                            <a>
+                                <i data-feather="eye"></i>
+                            </a>
+                        </li>
+                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
+                            <a href="/buy/compare">
+                                <i data-feather="refresh-cw"></i>
+                            </a>
+                        </li>
+                        <li data-bs-toggle="tooltip" data-bs-placement="top" title="Wishlist">
+                            <a href="/buy/wishlist" class="notifi-wishlist">
+                                <i data-feather="heart"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="product-detail position-relative">
+                    <a href="/items/product/@product.Id">
+                        <h6 class="name">
+                            @product.Name
+                        </h6>
+                    </a>
+                    <h6 class="sold weight text-content fw-normal">@product.Weight @product.unitsEnums</h6>
+                    <h6 class="price theme-color">$ @product.Price</h6>
+                    <div class="add-to-cart-btn-2 addtocart_btn">
+                        <button class="btn addcart-button btn buy-button">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <div class="cart_qty qty-box-2 qty-box-3">
+                            <div class="input-group">
+                                <button type="button" class="qty-left-minus" data-type="minus" data-field="">
+                                    <i class="fa fa-minus"></i>
+                                </button>
+                                <input class="form-control input-number qty-input" type="text" name="quantity" value="0">
+                                <button type="button" class="qty-right-plus" data-type="plus" data-field="">
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+}
+else
+{
+    <div class="col-12 text-center py-5">
+        <h4>No products found in this category</h4>
+        <p>Try selecting another category</p>
+    </div>
+}
+

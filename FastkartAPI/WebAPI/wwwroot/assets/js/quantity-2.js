@@ -1,6 +1,7 @@
  /**=====================
      Quantity 2 js
 ==========================**/
+/*
  $(".addcart-button").click(function () {
      $(this).next().addClass("open");
      $(".add-to-cart-box .qty-input").val('1');
@@ -31,4 +32,4 @@
      if ($(this).prev().val() < 9) {
          $(this).prev().val(+$(this).prev().val() + 1);
      }
- });
+ });*/

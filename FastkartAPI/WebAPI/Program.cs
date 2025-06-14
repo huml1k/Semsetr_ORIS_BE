@@ -1,16 +1,16 @@
+using FastkartAPI.AuthCheck;
 using FastkartAPI.Contracts.DTOs;
 using FastkartAPI.DataBase.Configurations;
-using FastkartAPI.DataBase.Models;
 using FastkartAPI.DataBase.Repositories;
+using FastkartAPI.DataBase.Repositories.Extensions;
 using FastkartAPI.DataBase.Repositories.Interfaces;
 using FastkartAPI.Infrastructure.Password;
+using FastkartAPI.Middlewares;
 using FastkartAPI.Services.Mapping;
 using FastkartAPI.Services.Services;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
-using FastkartAPI.DataBase.Repositories.Extensions;
 using WebAPI.DataBase;
-using FastkartAPI.AuthCheck;
 
 namespace FastkartAPI
 {
@@ -30,36 +30,53 @@ namespace FastkartAPI
             builder.Services.AddDbContext<MyApplicationContext>(options =>
                 options.UseNpgsql(builder.Configuration.GetConnectionString("MyDbContext")));
 
+            builder.Services
+    .AddControllers()
+    .AddJsonOptions(opts =>
+    {
+        opts.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+    });
+
             builder.Services.AddScoped<ProductCardDTO>();
             builder.Services.AddScoped<ProductService>();
             builder.Services.AddScoped<UserService>();
+            builder.Services.AddScoped<CartService>();
+
             builder.Services.AddScoped<JwtOption>();
             builder.Services.AddScoped<JwtProvider>();
             builder.Services.AddScoped<PasswordHasher>();
+
             builder.Services.AddScoped<MyApplicationContext>();
             builder.Services.AddScoped<ItemStoreConfiguration>();
             builder.Services.AddScoped<UserModelConfiguration>();
             builder.Services.AddScoped<CartModelConfiguration>();
-            builder.Services.AddScoped<WishlistModelConfiguration>();
-            builder.Services.AddScoped<ItemStore>();
-            builder.Services.AddScoped<UserModel>();
-            builder.Services.AddScoped<CartModel>();
-            builder.Services.AddScoped<WishListModel>();
+
             builder.Services.AddScoped<ICartModelRepository, CartModelRepository>();
-            builder.Services.AddScoped<IWishlistModelRepository, WishlistModelRepository>();
             builder.Services.AddScoped<IItemStoreRepository, ItemStoreRepository>();
             builder.Services.AddScoped<IUserModelRepository, UserModelRepository>();
 
-            builder.Services.AddAutoMapper(typeof(AutoMappingProducts));
+            builder.Services.AddAutoMapper(typeof(AutoMapping));
             builder.Services.AddAuthOption(builder.Configuration);
 
-            builder.Services.AddControllers()
-                    .AddJsonOptions(options =>
-                    {
-                        options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
-                    });
+            //builder.Services.AddControllers()
+            //        .AddJsonOptions(options =>
+            //        {
+            //            options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+            //        });
+
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll", policy =>
+                {
+                    policy.AllowAnyOrigin()
+                          .AllowAnyMethod()
+                          .AllowAnyHeader();
+                });
+            });
 
             var app = builder.Build();
+
+            app.UseMiddleware<ErrorHandlingMiddlware>();
 
             app.MapControllerRoute(
                 name: "areas",
@@ -67,7 +84,7 @@ namespace FastkartAPI
 
             app.UseSwagger();
             app.UseSwaggerUI();
-
+            app.UseCors("AllowAll");
             app.UseHttpsRedirection();
             app.UseAuthentication();
             app.UseAuthorization();

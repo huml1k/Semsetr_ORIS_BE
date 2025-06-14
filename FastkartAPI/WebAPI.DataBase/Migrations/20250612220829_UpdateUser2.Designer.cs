@@ -12,8 +12,8 @@ using WebAPI.DataBase;
 namespace FastkartAPI.DataBase.Migrations
 {
     [DbContext(typeof(MyApplicationContext))]
-    [Migration("20250530112439_initial")]
-    partial class initial
+    [Migration("20250612220829_UpdateUser2")]
+    partial class UpdateUser2
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,6 +24,35 @@ namespace FastkartAPI.DataBase.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
+
+            modelBuilder.Entity("FastkartAPI.DataBase.Models.CartModel", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<DateTime>("AddedDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid>("ItemId")
+                        .HasColumnType("uuid");
+
+                    b.Property<int>("Qty")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasDefaultValue(1);
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ItemId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Cart");
+                });
 
             modelBuilder.Entity("FastkartAPI.DataBase.Models.ItemStore", b =>
                 {
@@ -60,6 +89,9 @@ namespace FastkartAPI.DataBase.Migrations
                         .IsRequired()
                         .HasColumnType("integer[]");
 
+                    b.Property<int>("UnitEnums")
+                        .HasColumnType("integer");
+
                     b.Property<decimal>("Weight")
                         .HasColumnType("numeric");
 
@@ -74,6 +106,13 @@ namespace FastkartAPI.DataBase.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateOnly>("DateOnly")
+                        .HasColumnType("date");
+
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("text");
@@ -86,9 +125,37 @@ namespace FastkartAPI.DataBase.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<int>("Phone")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("Role")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("Sex")
+                        .HasColumnType("integer");
+
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("FastkartAPI.DataBase.Models.CartModel", b =>
+                {
+                    b.HasOne("FastkartAPI.DataBase.Models.ItemStore", "Item")
+                        .WithMany()
+                        .HasForeignKey("ItemId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("FastkartAPI.DataBase.Models.UserModel", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Item");
+
+                    b.Navigation("User");
                 });
 #pragma warning restore 612, 618
         }

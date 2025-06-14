@@ -8,59 +8,85 @@ namespace FastkartAPI.DataBase.Repositories;
 public class CartModelRepository : ICartModelRepository
 {
     private readonly MyApplicationContext _context;
+    
 
     public CartModelRepository(MyApplicationContext context)
     {
         _context = context;
     }
 
-    public async Task Create(CartModel cart)
+    public async Task Create(Guid userId, Guid itemId, int qty)
     {
-        // Проверяем, есть ли уже товар в корзине
-        var existingItem = await _context.Cart
-            .FirstOrDefaultAsync(c => c.UserId == cart.UserId && c.ItemId == cart.ItemId);
+        // Проверяем наличие товара
+        var item = await _context.ItemsStore.FindAsync(itemId);
+        if (item == null || item.Stock < qty)
+            throw new Exception("Недостаточно товара в наличии");
 
-        if (existingItem != null)
+        // Ищем существующую запись в корзине
+        var existingCartItem = await _context.Cart
+            .FirstOrDefaultAsync(c => c.UserId == userId && c.ItemId == itemId);
+
+        if (existingCartItem != null)
         {
-            existingItem.Qty += cart.Qty;
-            await Update(existingItem);
+            existingCartItem.Qty += qty;
+            _context.Cart.Update(existingCartItem);
         }
         else
         {
-            await _context.Cart.AddAsync(cart);
+            var newCartItem = new CartModel
+            {
+                UserId = userId,
+                ItemId = itemId,
+                Qty = qty
+            };
+            await _context.Cart.AddAsync(newCartItem);
+        }
+
+        await _context.SaveChangesAsync();
+    }
+
+    public async Task Update(Guid cartItemId, int newQty)
+    {
+        var cartItem = await _context.Cart
+            .Include(c => c.Item)
+            .FirstOrDefaultAsync(c => c.Id == cartItemId);
+
+        if (cartItem == null) return;
+
+        if (cartItem.Item.Stock < newQty)
+            throw new Exception("Недостаточно товара в наличии");
+
+        cartItem.Qty = newQty;
+        _context.Cart.Update(cartItem);
+        await _context.SaveChangesAsync();
+    }
+
+    public async Task Delete(Guid cartItemId)
+    {
+        var cartItem = await _context.Cart.FindAsync(cartItemId);
+        if (cartItem != null)
+        {
+            _context.Cart.Remove(cartItem);
             await _context.SaveChangesAsync();
         }
     }
 
-    public async Task Update(CartModel cart)
-    {
-        _context.Cart.Update(cart);
-        await _context.SaveChangesAsync();
-    }
-
-    public async Task Delete(CartModel cart)
-    {
-        _context.Cart.Remove(cart);
-        await _context.SaveChangesAsync();
-    }
-
     public async Task<List<CartModel>> GetByUserId(Guid id)
     {
-        var result = await _context.Cart
-            .AsNoTracking()
-            .Where(x => x.UserId == id)
+        return await _context.Cart
+            .Include(c => c.Item)
+            .Where(c => c.UserId == id)
             .ToListAsync();
-        
-        return result;
     }
 
     public async Task DeleteByID(Guid id)
     {
-        var cartItem = await GetById(id);
-        if (cartItem != null)
-        {
-            await Delete(cartItem);
-        }
+        var cartItems = await _context.Cart
+            .Where(c => c.UserId == id)
+            .ToListAsync();
+
+        _context.Cart.RemoveRange(cartItems);
+        await _context.SaveChangesAsync();
     }
 
     public async Task<CartModel> GetById(Guid id)

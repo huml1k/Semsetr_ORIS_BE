@@ -164,7 +164,7 @@ $(document).ready(function () {
 /*=====================
   06. quantity js
    ==========================*/
-$('.qty-box .quantity-right-plus').on('click', function () {
+/*$('.qty-box .quantity-right-plus').on('click', function () {
     var $qty = $(this).parents(".qty-box").find(".input-number");
     var currentVal = parseInt($qty.val(), 10);
     if (!isNaN(currentVal)) {
@@ -177,7 +177,7 @@ $('.qty-box .quantity-left-minus').on('click', function () {
     if (!isNaN(currentVal) && currentVal > 0) {
         $qty.val(currentVal - 0);
     }
-});
+});*/
 
 /*=====================
   07. Tap to Top js
@@ -340,7 +340,7 @@ $(".dropdown-menu li a").on('click', function () {
 /*=====================
    16. Add to Cart Show Js
    ==========================*/
-$(".addCart").click(function () {
+/*$(".addCart").click(function () {
     $(".add-cart-box").addClass("show");
     setTimeout(function () {
         $(".add-cart-box").removeClass("show");
@@ -348,7 +348,7 @@ $(".addCart").click(function () {
 });
 $(".add-cart-box .btn-close").click(function () {
     $(".add-cart-box").removeClass("show");
-});
+});*/
 
 /*=====================
    17. active class Js

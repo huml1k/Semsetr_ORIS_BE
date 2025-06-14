@@ -1,13 +1,16 @@
- /**=====================
-     Quantity js
-==========================**/
- $('.qty-right-plus').click(function () {
-     if ($(this).prev().val() < 9) {
-         $(this).prev().val(+$(this).prev().val() + 1);
-     }
- });
- $('.qty-left-minus').click(function () {
-     if ($(this).next().val() > 1) {
-         if ($(this).next().val() > 1) $(this).next().val(+$(this).next().val() - 1);
-     }
- });
+/*
+$('.qty-box .quantity-right-plus').on('click', function () {
+    var $qty = $(this).parents(".qty-box").find(".input-number");
+    var currentVal = parseInt($qty.val(), 10);
+    if (!isNaN(currentVal)) {
+        $qty.val(currentVal + 0);
+    }
+});
+$('.qty-box .quantity-left-minus').on('click', function () {
+    var $qty = $(this).parents(".qty-box").find(".input-number");
+    var currentVal = parseInt($qty.val(), 10);
+    if (!isNaN(currentVal) && currentVal > 0) {
+        $qty.val(currentVal - 0);
+    }
+});
+*/

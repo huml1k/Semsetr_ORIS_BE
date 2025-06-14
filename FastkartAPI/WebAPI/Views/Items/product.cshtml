@@ -52,7 +52,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="breadcrumb-contain">
-                        <h2>Creamy Chocolate Cake</h2>
+                        <h2>@Model.Name</h2>
                         <nav>
                             <ol class="breadcrumb mb-0">
                                 <li class="breadcrumb-item">
@@ -61,7 +61,7 @@
                                     </a>
                                 </li>
 
-                                <li class="breadcrumb-item active">Creamy Chocolate Cake</li>
+                                <li class="breadcrumb-item active">@Model.Name</li>
                             </ol>
                         </nav>
                     </div>
@@ -139,35 +139,12 @@
                                 </div>
 
                                 <div class="note-box product-package">
-                                    <div class="cart_qty qty-box product-qty">
-                                        <div class="input-group">
-                                            <button type="button" class="qty-right-plus" data-type="plus" data-field="">
-                                                <i class="fa fa-plus"></i>
-                                            </button>
-                                            <input class="form-control input-number qty-input" type="text"
-                                                name="quantity" value="0">
-                                            <button type="button" class="qty-left-minus" data-type="minus"
-                                                data-field="">
-                                                <i class="fa fa-minus"></i>
-                                            </button>
-                                        </div>
-                                    </div>
+                                    <input type="hidden" id="currentItemId" value="@Model.Id" />
 
-                                    <button onclick="location.href = '/buy/cart';"
-                                        class="btn btn-md bg-dark cart-button text-white w-100">Add To Cart</button>
+                                    <button onclick="location.href = '/buy/cartPage';"
+                                            class="btn btn-md bg-dark cart-button text-white w-100 buy-button">Add To Cart</button>
                                 </div>
-
-                                <div class="buy-box">
-                                    <a href="/buy/wishlist">
-                                        <i data-feather="heart"></i>
-                                        <span>Add To Wishlist</span>
-                                    </a>
-
-                                    <a href="/buy/compare">
-                                        <i data-feather="shuffle"></i>
-                                        <span>Add To Compare</span>
-                                    </a>
-                                </div>
+                                
 
                                 <div class="pickup-box">
                                     <div class="product-title">
@@ -442,6 +419,8 @@
 
     <!-- theme setting js -->
     <script src="~/assets/js/theme-setting.js"></script>
+
+
 
 </body>
 

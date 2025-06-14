@@ -16,12 +16,14 @@
     <None Include="Areas\AdminPanel\Views\Admin\seller-dashboard.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Views\Page\404.cshtml" />
     <None Include="Views\Shared\_Menu.cshtml" />
     <None Include="Views\Auth\forgot.cshtml" />
     <None Include="Views\Auth\login.cshtml" />
     <None Include="Views\Auth\sign-up.cshtml" />
     <None Include="Views\Buy\cart.cshtml" />
     <None Include="Views\Buy\checkout.cshtml" />
+    <None Include="Views\User\user-dashboard.cshtml" />
     <None Include="wwwroot\front-end\index-8.html" />
   </ItemGroup>
 

@@ -10,8 +10,6 @@ namespace WebAPI.DataBase
 
         public DbSet<UserModel> Users { get; set; }
 
-        public DbSet<WishListModel> WishLists { get; set; }
-
         public DbSet<CartModel> Cart { get; set; }
 
         public MyApplicationContext(DbContextOptions<MyApplicationContext> dbContext) : base(dbContext) { }
@@ -21,7 +19,6 @@ namespace WebAPI.DataBase
             modelBuilder.ApplyConfiguration(new ItemStoreConfiguration());
             modelBuilder.ApplyConfiguration(new UserModelConfiguration());
             modelBuilder.ApplyConfiguration(new CartModelConfiguration());
-            modelBuilder.ApplyConfiguration(new WishlistModelConfiguration());
 
             base.OnModelCreating(modelBuilder);
         }

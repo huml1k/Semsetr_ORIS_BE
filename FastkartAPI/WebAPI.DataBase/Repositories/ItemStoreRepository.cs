@@ -2,6 +2,7 @@
 using FastkartAPI.DataBase.Models.Enums;
 using FastkartAPI.DataBase.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
 using WebAPI.DataBase;
 
 namespace FastkartAPI.DataBase.Repositories
@@ -39,16 +40,6 @@ namespace FastkartAPI.DataBase.Repositories
             return result;
         }
 
-        public async Task<List<ItemStore>> GetByCategory(TypeItemEnum type)
-        {
-            var result = await _context.ItemsStore
-                .AsNoTracking()
-                .Where(x => x.TypeItem.Contains(type))
-                .ToListAsync();
-
-            return result;
-        }
-
         public async Task<ItemStore> GetById(Guid id)
         {
             var result = await _context.ItemsStore
@@ -56,6 +47,17 @@ namespace FastkartAPI.DataBase.Repositories
                 .FirstOrDefaultAsync(x => x.Id == id);
 
             return result;
+        }
+
+        public async Task<List<ItemStore>> Search(string searchTerm)
+        {
+            if (string.IsNullOrWhiteSpace(searchTerm))
+                return new List<ItemStore>();
+
+            return await _context.ItemsStore
+                .AsNoTracking()
+                .Where(p => EF.Functions.Like(p.Name, $"%{searchTerm}%"))
+                .ToListAsync();
         }
 
         public async Task<ItemStore> GetByName(string name)
@@ -67,9 +69,31 @@ namespace FastkartAPI.DataBase.Repositories
             return result;
         }
 
-        public Task Update(ItemStore item)
+        public async Task Update(ItemStore item)
         {
-            throw new NotImplementedException();
+            _context.ItemsStore.Update(item);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task<List<ItemStore>> GetByCategory(List<TypeItemEnum> categories)
+        {
+            return await _context.ItemsStore
+            .AsNoTracking()
+            .Where(x => x.TypeItem.Any(t => categories.Contains(t)))
+            .ToListAsync();
+        }
+
+        public async Task DecreaseStock(Guid itemId, int quantity)
+        {
+            var item = await _context.ItemsStore.FindAsync(itemId);
+            if (item == null) throw new Exception("Товар не найден");
+
+            if (item.Stock < quantity)
+                throw new Exception("Недостаточно товара в наличии");
+
+            item.Stock -= quantity;
+            _context.ItemsStore.Update(item);
+            await _context.SaveChangesAsync();
         }
     }
 }

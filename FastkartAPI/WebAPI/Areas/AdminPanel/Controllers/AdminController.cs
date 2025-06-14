@@ -7,7 +7,7 @@ namespace WebAPI.Areas.AdminPanel.Controllers
 {
     [Area("AdminPanel")]
     [Route("[controller]")]
-    [Controller]
+    [ApiController]
     public class AdminController : Controller
     {
         private readonly ProductService _productService;
@@ -19,12 +19,21 @@ namespace WebAPI.Areas.AdminPanel.Controllers
         }
 
         [HttpGet("index")]
-        public async Task<IActionResult> Index() => View("seller-dashboard");
+        public async Task<IActionResult> Index()
+        {
+            var result = await _productService.GetAll();
+
+            return View("seller-dashboard", result);
+        } 
+
+        [HttpGet("addProductPage")]
+        public async Task<IActionResult> GetPageAddProduct() => View("CreateProduct");
+
 
         [HttpPost("addProduct")]
         public async Task<IActionResult> CreateItem([FromBody] CreateProductDTO item) 
         {
-             await _productService.Create(item);
+            await _productService.Create(item);
             return Ok("Продукт был добавлен"); 
         }
 
@@ -36,8 +45,16 @@ namespace WebAPI.Areas.AdminPanel.Controllers
             return Ok(result);
         }
 
-        [HttpDelete("deleteProduct")]
-        public async Task<IActionResult> DeleteProduct([FromBody] Guid id)
+        [HttpGet("product/{id}")]
+        public async Task<IActionResult> GetByID(Guid id) 
+        {
+            var item = await _productService.GetById(id);
+
+            return View("EditProduct", item);
+        }
+
+        [HttpDelete("deleteProduct/{id}")]
+        public async Task<IActionResult> DeleteProduct(Guid id)
         {
             await _productService.Delete(id);
 
@@ -45,7 +62,7 @@ namespace WebAPI.Areas.AdminPanel.Controllers
         }
 
         [HttpPost("updateProduct")]
-        public async Task<IActionResult> UpdateProductInfo([FromBody] ItemStore itemStore) 
+        public async Task<IActionResult> UpdateProductInfo([FromForm] ItemStore itemStore) 
         {
             await _productService.Update(itemStore);
             return Ok("Данные успешно обновлены");

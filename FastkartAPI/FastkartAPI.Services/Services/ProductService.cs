@@ -50,7 +50,12 @@ namespace FastkartAPI.Services.Services
             return await _itemStoreRepository.GetByName(name);
         }
 
-        public async Task<List<ItemStore>> GetByCategory(TypeItemEnum type) 
+        public async Task<List<ItemStore>> Search(string searchTerm)
+        {
+            return await _itemStoreRepository.Search(searchTerm);
+        }
+
+        public async Task<List<ItemStore>> GetByCategory(List<TypeItemEnum> type) 
         {
             return await _itemStoreRepository.GetByCategory(type);
         }

@@ -57,9 +57,10 @@ namespace FastkartAPI.DataBase.Repositories
             return result;
         }
 
-        public Task Update(UserModel user)
+        public async Task Update(UserModel user)
         {
-            throw new NotImplementedException();
+            _context.Users.Update(user);
+            await _context.SaveChangesAsync();
         }
     }
 }
