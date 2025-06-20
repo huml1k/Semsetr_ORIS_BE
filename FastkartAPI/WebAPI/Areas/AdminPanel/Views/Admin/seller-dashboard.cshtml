@@ -266,7 +266,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-xxl-6">
+                                        @* <div class="col-xxl-6">
                                             <div class="table-responsive dashboard-bg-box">
                                                 <div class="dashboard-title mb-4">
                                                     <h3>Trending Products</h3>
@@ -439,7 +439,7 @@
                                                     </table>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> *@
                                     </div>
                                 </div>
                             </div>
@@ -505,7 +505,7 @@
                             <div class="tab-pane fade" id="pills-order" role="tabpanel">
                                 <div class="dashboard-order">
                                     <div class="title">
-                                        <h2>All Order</h2>
+                                        <h2>All Orders</h2>
                                         <span class="title-leaf title-leaf-gray">
                                             <svg class="icon-width bg-gray">
                                                 <use xlink:href="https://themes.pixelstrap.com/fastkart/assets/svg/leaf.svg#leaf"></use>
@@ -518,128 +518,21 @@
                                             <table class="table order-table">
                                                 <thead>
                                                     <tr>
-                                                        <th scope="col">Order ID</th>
-                                                        <th scope="col">Product Name</th>
-                                                        <th scope="col">Status</th>
-                                                        <th scope="col">Price</th>
+                                                        <th>Order ID</th>
+                                                        <th>User</th>
+                                                        <th>Tracking ID</th>
+                                                        <th>Status</th>
+                                                        <th>Total Price</th>
+                                                        <th>Date</th>
                                                     </tr>
                                                 </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td class="product-image">#254834</td>
-                                                        <td>
-                                                            <h6>Fantasy Crunchy Choco Chip Cookies</h6>
-                                                        </td>
-                                                        <td>
-                                                            <label class="success">Shipped</label>
-                                                        </td>
-                                                        <td>
-                                                            <h6>$25.69</h6>
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <td class="product-image">#355678</td>
-                                                        <td>
-                                                            <h6>Peanut Butter Bite Premium Butter Cookies 600 g</h6>
-                                                        </td>
-                                                        <td>
-                                                            <label class="danger">Pending</label>
-                                                        </td>
-                                                        <td>
-                                                            <h6>$25.69</h6>
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <td class="product-image">#647536</td>
-                                                        <td>
-                                                            <h6>Yumitos Chilli Sprinkled Potato Chips 100 g</h6>
-                                                        </td>
-                                                        <td>
-                                                            <label class="success">Shipped</label>
-                                                        </td>
-                                                        <td>
-                                                            <h6>$25.69</h6>
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <td class="product-image">#125689</td>
-                                                        <td>
-                                                            <h6>healthy Long Life Toned Milk 1 L</h6>
-                                                        </td>
-                                                        <td>
-                                                            <label class="danger">Pending</label>
-                                                        </td>
-                                                        <td>
-                                                            <h6>$25.69</h6>
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <td class="product-image">#215487</td>
-                                                        <td>
-                                                            <h6>Raw Mutton Leg, Packaging 5 Kg</h6>
-                                                        </td>
-                                                        <td>
-                                                            <label class="danger">Pending</label>
-                                                        </td>
-                                                        <td>
-                                                            <h6>$25.69</h6>
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <td class="product-image">#365474</td>
-                                                        <td>
-                                                            <h6>Cold Brew Coffee Instant Coffee 50 g</h6>
-                                                        </td>
-                                                        <td>
-                                                            <label class="success">Shipped</label>
-                                                        </td>
-                                                        <td>
-                                                            <h6>$25.69</h6>
-                                                        </td>
-                                                    </tr>
-
-                                                    <tr>
-                                                        <td class="product-image">#368415</td>
-                                                        <td>
-                                                            <h6>SnackAmor Combo Pack of Jowar Stick and Jowar Chips</h6>
-                                                        </td>
-                                                        <td>
-                                                            <label class="danger">Pending</label>
-                                                        </td>
-                                                        <td>
-                                                            <h6>$25.69</h6>
-                                                        </td>
-                                                    </tr>
+                                                <tbody id="ordersTableBody">
+                                                    <!-- Данные будут загружены через AJAX -->
                                                 </tbody>
                                             </table>
                                         </div>
-                                        <nav class="custom-pagination">
-                                            <ul class="pagination justify-content-center">
-                                                <li class="page-item disabled">
-                                                    <a class="page-link" href="javascript:void(0)" tabindex="-1">
-                                                        <i class="fa-solid fa-angles-left"></i>
-                                                    </a>
-                                                </li>
-                                                <li class="page-item active">
-                                                    <a class="page-link" href="javascript:void(0)">1</a>
-                                                </li>
-                                                <li class="page-item">
-                                                    <a class="page-link" href="javascript:void(0)">2</a>
-                                                </li>
-                                                <li class="page-item">
-                                                    <a class="page-link" href="javascript:void(0)">3</a>
-                                                </li>
-                                                <li class="page-item">
-                                                    <a class="page-link" href="javascript:void(0)">
-                                                        <i class="fa-solid fa-angles-right"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
+                                        <nav class="custom-pagination" id="ordersPagination">
+                                            <!-- Пагинация будет загружена через AJAX -->
                                         </nav>
                                     </div>
                                 </div>
@@ -1504,6 +1397,229 @@
             });
         });
     </script>
+
+    <script>
+        $(document).ready(function() {
+            let currentPage = 1;
+            const pageSize = 10;
+
+            // Статическое соответствие статусов
+            const statusMapping = {
+                "Pending": "Pending",
+                "Shipped": "Shipped",
+                "Success": "Success"
+            };
+
+            // Загрузка заказов
+            function loadOrders(page) {
+                $.get(`/Admin/orders?page=${page}&pageSize=${pageSize}`, function(response) {
+                    const tbody = $('#ordersTableBody');
+                    tbody.empty();
+
+                    response.items.forEach(order => {
+                        const row = `
+                        <tr data-id="${order.orderId}">
+                            <td>${order.orderId}</td>
+                            <td>${order.user?.username || 'N/A'}</td>
+                            <td>${order.trackingId}</td>
+                            <td>
+                                <select class="form-select status-select">
+                                    ${getStatusOptions(order.status)}
+                                </select>
+                            </td>
+                            <td>$${order.totalPrice.toFixed(2)}</td>
+                            <td>${order.orderDate ? new Date(order.orderDate).toLocaleDateString() : 'N/A'}</td>
+                        </tr>
+                        `;
+                        tbody.append(row);
+                    });
+
+                    // Обновление пагинации
+                    updatePagination(response);
+                });
+            }
+
+            // Генерирует options для select на основе статусов
+            function getStatusOptions(currentStatus) {
+                let options = '';
+                for (const [value, text] of Object.entries(statusMapping)) {
+                    const selected = value === currentStatus ? 'selected' : '';
+                    options += `<option value="${value}" ${selected}>${text}</option>`;
+                }
+                return options;
+            }
+
+            // Обновление пагинации
+            function updatePagination(response) {
+                const pagination = $('#ordersPagination');
+                pagination.empty();
+
+                if (response.totalPages > 1) {
+                    let paginationHtml = `<ul class="pagination justify-content-center">`;
+
+                    // Previous button
+                    if (currentPage > 1) {
+                        paginationHtml += `
+                            <li class="page-item">
+                                <a class="page-link" href="javascript:void(0)" data-page="${currentPage - 1}">
+                                    <i class="fa-solid fa-angles-left"></i>
+                                </a>
+                            </li>`;
+                    }
+
+                    // Page numbers
+                    for (let i = 1; i <= response.totalPages; i++) {
+                        paginationHtml += `
+                            <li class="page-item ${i === currentPage ? 'active' : ''}">
+                                <a class="page-link" href="javascript:void(0)" data-page="${i}">${i}</a>
+                            </li>`;
+                    }
+
+                    // Next button
+                    if (currentPage < response.totalPages) {
+                        paginationHtml += `
+                            <li class="page-item">
+                                <a class="page-link" href="javascript:void(0)" data-page="${currentPage + 1}">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                </a>
+                            </li>`;
+                    }
+
+                    paginationHtml += `</ul>`;
+                    pagination.html(paginationHtml);
+                }
+            }
+
+            // Обработка изменения статуса
+            $(document).on('change', '.status-select', function() {
+                const row = $(this).closest('tr');
+                const orderId = row.data('id');
+                const newStatus = $(this).val();
+
+                $.ajax({
+                    url: '/Admin/updateOrderStatus',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({
+                        OrderId: orderId,
+                        Status: newStatus
+                    }),
+                    success: function() {
+                        toastr.success('Статус обновлен');
+
+                        // Обновляем текст статуса в выпадающем списке
+                        const option = $(this).find('option:selected');
+                        option.text(statusMapping[newStatus]);
+                    }.bind(this),
+                    error: function() {
+                        toastr.error('Ошибка обновления');
+                        // Возвращаем предыдущее значение
+                        const prevStatus = row.data('prev-status');
+                        if (prevStatus !== undefined) {
+                            $(this).val(prevStatus);
+                        }
+                    }
+                });
+
+                // Сохраняем предыдущее значение на случай ошибки
+                row.data('prev-status', $(this).data('prev-value'));
+                $(this).data('prev-value', newStatus);
+            });
+
+            // Обработка пагинации
+            $(document).on('click', '#ordersPagination .page-link', function() {
+                const page = $(this).data('page');
+                if (page) {
+                    currentPage = page;
+                    loadOrders(page);
+                }
+            });
+
+            // Первоначальная загрузка
+            loadOrders(currentPage);
+        });
+    </script>
+
+    <script>
+    $(document).ready(function() {
+        // Загрузка статистики
+        function loadDashboardStats() {
+            // Total Products
+            $.get('/Items/totalProducts', function(count) {
+                $('.total-contain:eq(0) h3').text(count);
+            });
+
+            // Total Sales
+            $.get('/Order/orderCount', function(sales) {
+                $('.total-contain:eq(1) h3').text(sales);
+            });
+
+            // Order Pending
+            $.get('/Order/orderCountPending', function(pending) {
+                $('.total-contain:eq(2) h3').text(pending);
+            });
+        }
+
+        // Загрузка последних заказов
+        function loadRecentOrders() {
+            $.get('/Order/list', function(orders) {
+                const tbody = $('.o tbody');
+                tbody.empty();
+                
+                orders.forEach(order => {
+                    const statusClass = order.status === 0 ? 'danger' : 'success';
+                    const statusText = order.status === 0 ? 'Pending' : 'Shipped';
+                    
+                    const row = `
+                        <tr>
+                            <td class="product-image">${order.orderId}</td>
+                            <td>
+                                <h6>${order.user?.username || 'N/A'}</h6>
+                            </td>
+                            <td>
+                                <label class="${statusClass}">${statusText}</label>
+                            </td>
+                        </tr>
+                    `;
+                    tbody.append(row);
+                });
+            });
+        }
+
+        // Загрузка популярных продуктов
+        function loadTrendingProducts() {
+            $.get('/Items/All', function(products) {
+                const tbody = $('.product-table tbody');
+                tbody.empty();
+                
+                products.forEach(product => {
+                    const row = `
+                        <tr>
+                            <td class="product-image">
+                                <img src="${product.picture}" class="img-fluid" alt="">
+                            </td>
+                            <td>
+                                <h6>${product.name}</h6>
+                            </td>
+                            <td>
+                                <h6>$${product.price}</h6>
+                            </td>
+                            <td>
+                                <h6>${product.salesCount || 0}</h6>
+                            </td>
+                        </tr>
+                    `;
+                    tbody.append(row);
+                });
+            });
+        }
+
+        // Инициализация панели
+        loadDashboardStats();
+        // loadRecentOrders();
+        // loadTrendingProducts();
+    });
+</script>
 
     <!-- latest jquery-->
     <script src="../assets/js/jquery-3.6.0.min.js"></script>

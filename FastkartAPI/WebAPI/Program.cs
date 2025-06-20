@@ -41,6 +41,7 @@ namespace FastkartAPI
             builder.Services.AddScoped<ProductService>();
             builder.Services.AddScoped<UserService>();
             builder.Services.AddScoped<CartService>();
+            builder.Services.AddScoped<OrderService>();
 
             builder.Services.AddScoped<JwtOption>();
             builder.Services.AddScoped<JwtProvider>();
@@ -50,7 +51,9 @@ namespace FastkartAPI
             builder.Services.AddScoped<ItemStoreConfiguration>();
             builder.Services.AddScoped<UserModelConfiguration>();
             builder.Services.AddScoped<CartModelConfiguration>();
+            builder.Services.AddScoped<OrderModelConfiguration>();
 
+            builder.Services.AddScoped<IOrderModelRepository, OrderModelRepository>();
             builder.Services.AddScoped<ICartModelRepository, CartModelRepository>();
             builder.Services.AddScoped<IItemStoreRepository, ItemStoreRepository>();
             builder.Services.AddScoped<IUserModelRepository, UserModelRepository>();

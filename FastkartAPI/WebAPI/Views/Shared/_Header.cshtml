@@ -1,4 +1,6 @@
-﻿<header class="pb-0 fixed-header">
+﻿@* Файл: Views/Shared/_Header.cshtml *@
+
+<header class="pb-0 fixed-header">
     <div class="top-nav top-header">
         <div class="container-fluid-xs">
             <div class="row">
@@ -67,7 +69,6 @@
 
                                         <div class="onhover-div">
                                             <ul class="cart-list">
-
                                             </ul>
 
                                             <div class="price-box">
@@ -82,59 +83,21 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="right-side onhover-dropdown">
-                                    @if (User.Identity.IsAuthenticated)
-                                    {
-                                        <div class="delivery-login-box">
-                                            <div class="delivery-icon">
-                                                <i data-feather="user"></i>
-                                            </div>
-                                            <div class="delivery-detail">
-                                                <h6>Hello,</h6>
-                                                <h5>@User.Claims.FirstOrDefault(x => x.Type == "userName").Value</h5>
-                                            </div>
+                                <li class="right-side onhover-dropdown" id="userAuthSection">
+                                    <!-- Динамический контент будет загружен здесь -->
+                                    <div class="delivery-login-box">
+                                        <div class="delivery-icon">
+                                            <i data-feather="user"></i>
                                         </div>
-
-                                        <div class="onhover-div onhover-div-login">
-                                            <ul class="user-box-name">
-                                                <li class="product-box-contain">
-                                                    <a href="/user/dashboard/@User.Claims.FirstOrDefault(x => x.Type == "userId").Value">@User.Claims.FirstOrDefault(x => x.Type == "userName").Value</a>
-                                                </li>
-                                                <li class="product-box-contain">
-                                                    <form action="/auth/logout" method="post">
-                                                        <button type="submit" class="btn btn-link p-0">Logout</button>
-                                                    </form>
-                                                </li>
-                                            </ul>
+                                        <div class="delivery-detail">
+                                            <h6>Hello,</h6>
+                                            <h5>
+                                                <div class="spinner-border spinner-border-sm text-primary" role="status">
+                                                    <span class="visually-hidden">Loading...</span>
+                                                </div>
+                                            </h5>
                                         </div>
-                                    }
-                                    else
-                                    {
-                                        <div class="delivery-login-box">
-                                            <div class="delivery-icon">
-                                                <i data-feather="user"></i>
-                                            </div>
-                                            <div class="delivery-detail">
-                                                <h6>Hello,</h6>
-                                                <h5>My Account</h5>
-                                            </div>
-                                        </div>
-
-                                        <div class="onhover-div onhover-div-login">
-                                            <ul class="user-box-name">
-                                                <li class="product-box-contain">
-                                                    <i></i>
-                                                    <a href="/auth/login">Log In</a>
-                                                </li>
-                                                <li class="product-box-contain">
-                                                    <a href="/auth/register">Register</a>
-                                                </li>
-                                                <li class="product-box-contain">
-                                                    <a href="/auth/forgot-password">Forgot Password</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    }
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -147,19 +110,122 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        // Находим элементы поиска
+        // Функция загрузки данных пользователя
+        async function loadUserData() {
+            try {
+                const response = await fetch('/user/current', {
+                    method: 'GET',
+                    credentials: 'include',
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.status === 401) {
+                    // Не авторизован - показываем гостевой интерфейс
+                    renderGuestSection();
+                    return;
+                }
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                const userData = await response.json();
+                renderUserSection(userData);
+            } catch (error) {
+                console.error('Error loading user data:', error);
+                renderGuestSection();
+            }
+        }
+
+        // Рендерим секцию для авторизованного пользователя
+        function renderUserSection(user) {
+            const userSection = document.getElementById('userAuthSection');
+
+            // Определяем ссылку в зависимости от роли
+            const dashboardLink = user.role === 'Admin' ?
+                `<a href="/profile">${user.fullName}</a>` :
+                `<a href="/user/dashboard/${user.userId}">${user.fullName}</a>`;
+
+            userSection.innerHTML = `
+                <div class="delivery-login-box">
+                    <div class="delivery-icon">
+                        <i data-feather="user"></i>
+                    </div>
+                    <div class="delivery-detail">
+                        <h6>Hello,</h6>
+                        <h5>${user.fullName}</h5>
+                    </div>
+                </div>
+
+                <div class="onhover-div onhover-div-login">
+                    <ul class="user-box-name">
+                        <li class="product-box-contain">
+                            ${dashboardLink}
+                        </li>
+                        <li class="product-box-contain">
+                            <form action="/auth/logout" method="post">
+                                <button type="submit" class="btn btn-link p-0">Logout</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            `;
+
+            // Инициализируем Feather Icons
+            if (window.feather) {
+                feather.replace();
+            }
+        }
+
+        // Рендерим гостевую секцию
+        function renderGuestSection() {
+            const userSection = document.getElementById('userAuthSection');
+            userSection.innerHTML = `
+                <div class="delivery-login-box">
+                    <div class="delivery-icon">
+                        <i data-feather="user"></i>
+                    </div>
+                    <div class="delivery-detail">
+                        <h6>Hello,</h6>
+                        <h5>My Account</h5>
+                    </div>
+                </div>
+
+                <div class="onhover-div onhover-div-login">
+                    <ul class="user-box-name">
+                        <li class="product-box-contain">
+                            <a href="/auth/login">Log In</a>
+                        </li>
+                        <li class="product-box-contain">
+                            <a href="/auth/register">Register</a>
+                        </li>
+                        <li class="product-box-contain">
+                            <a href="/auth/forgot-password">Forgot Password</a>
+                        </li>
+                    </ul>
+                </div>
+            `;
+
+            if (window.feather) {
+                feather.replace();
+            }
+        }
+
+        // Инициализация
+        loadUserData();
+
+        // Обработка поиска
         const searchButton = document.querySelector('.bg-theme');
         const searchInput = document.querySelector('.form-control');
 
-        // Обработчик для кнопки
-        searchButton.addEventListener('click', performSearch);
-
-        // Обработчик для нажатия Enter в поле ввода
-        searchInput.addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                performSearch();
-            }
-        });
+        if (searchButton && searchInput) {
+            searchButton.addEventListener('click', performSearch);
+            searchInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') performSearch();
+            });
+        }
 
         function performSearch() {
             const searchTerm = searchInput.value.trim();

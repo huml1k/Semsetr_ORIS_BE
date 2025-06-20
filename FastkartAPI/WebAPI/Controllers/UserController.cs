@@ -44,5 +44,35 @@ namespace FastkartAPI.Controllers
                 return StatusCode(500, new { message = ex.Message });
             }
         }
+
+        [HttpGet("current")]
+        [Authorize] // Только для авторизованных пользователей
+        public async Task<IActionResult> GetCurrentUser()
+        {
+            try
+            {
+                // Получаем ID пользователя из claims
+                var userId = User.Claims.FirstOrDefault(x => x.Type == "userId").Value;
+
+                if (string.IsNullOrEmpty(userId))
+                    return Unauthorized();
+
+                var user = await _userService.GetById(Guid.Parse(userId));
+
+                if (user == null)
+                    return NotFound();
+
+                return Ok(new
+                {
+                    userId = user.Id,
+                    fullName = user.FullName,
+                    role = user.Role.ToString()
+                });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
     }
 }

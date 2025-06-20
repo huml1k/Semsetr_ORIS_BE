@@ -27,6 +27,7 @@ namespace FastkartAPI.DataBase.Models
 
         public RoleEnum Role { get; set; } = RoleEnum.Buyer;
 
+
         public static UserModel CreateModel(UserModel model, string password) 
         {
             return new UserModel()

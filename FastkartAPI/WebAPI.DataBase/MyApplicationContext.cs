@@ -12,6 +12,8 @@ namespace WebAPI.DataBase
 
         public DbSet<CartModel> Cart { get; set; }
 
+        public DbSet<OrderModel> OrderModels { get; set; }
+
         public MyApplicationContext(DbContextOptions<MyApplicationContext> dbContext) : base(dbContext) { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -19,6 +21,7 @@ namespace WebAPI.DataBase
             modelBuilder.ApplyConfiguration(new ItemStoreConfiguration());
             modelBuilder.ApplyConfiguration(new UserModelConfiguration());
             modelBuilder.ApplyConfiguration(new CartModelConfiguration());
+            modelBuilder.ApplyConfiguration(new OrderModelConfiguration());
 
             base.OnModelCreating(modelBuilder);
         }

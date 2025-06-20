@@ -1,4 +1,5 @@
 ﻿using FastkartAPI.Contracts.Contracts;
+using FastkartAPI.Services.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,11 +11,14 @@ namespace FastkartAPI.Controllers
     public class BuyController : Controller
     {
         private readonly CartService _cartService;
+        private readonly OrderService _orderService;
 
         public BuyController(
-            CartService cartService)
+            CartService cartService,
+            OrderService orderService)
         {
             _cartService = cartService;
+            _orderService = orderService;
         }
 
         private Guid GetCurrentUserId()
@@ -78,13 +82,20 @@ namespace FastkartAPI.Controllers
             try
             {
                 var userId = GetCurrentUserId();
+                await _orderService.ProcessOrder(userId);
                 await _cartService.ProcessOrder(userId);
-                return Ok(); 
+                return RedirectToAction("GetPageSuccess"); 
             }
             catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
+        }
+
+        [HttpGet("success")]
+        public async Task<IActionResult> GetPageSuccess() 
+        {
+            return View("order-success");
         }
     }
 }

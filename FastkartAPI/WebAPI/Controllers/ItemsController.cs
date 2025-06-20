@@ -49,5 +49,12 @@ namespace FastkartAPI.Controllers
 
             return Ok(result);
         }
+
+        [HttpGet("totalProducts")]
+        public async Task<IActionResult> GetTotalProducts() 
+        {
+            var products = await _productService.GetCountProducts();
+            return Ok(products);
+        }
     }
 }

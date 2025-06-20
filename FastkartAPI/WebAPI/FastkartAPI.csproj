@@ -16,6 +16,7 @@
     <None Include="Areas\AdminPanel\Views\Admin\seller-dashboard.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Views\Buy\order-success.cshtml" />
     <None Include="Views\Page\404.cshtml" />
     <None Include="Views\Shared\_Menu.cshtml" />
     <None Include="Views\Auth\forgot.cshtml" />
@@ -61,6 +62,7 @@
 
   <ItemGroup>
     <Folder Include="Areas\AdminPanel\Views\Shared\" />
+    <Folder Include="Views\Order\" />
   </ItemGroup>
 
 </Project>

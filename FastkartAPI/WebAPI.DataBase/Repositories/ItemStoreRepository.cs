@@ -95,5 +95,11 @@ namespace FastkartAPI.DataBase.Repositories
             _context.ItemsStore.Update(item);
             await _context.SaveChangesAsync();
         }
+
+        public async Task<int> GetCountItems()
+        {
+            return await _context.ItemsStore
+                .CountAsync();
+        }
     }
 }

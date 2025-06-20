@@ -138,46 +138,141 @@
     <!-- Bg overlay End -->
 
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const form = document.querySelector('form');
-            const termsCheckbox = document.getElementById('flexCheckDefault');
+    document.addEventListener('DOMContentLoaded', () => {
+        const form = document.querySelector('form');
+        const fullNameInput = document.getElementById('fullName');
+        const emailInput = document.getElementById('email');
+        const passwordInput = document.getElementById('password');
+        const termsCheckbox = document.getElementById('flexCheckDefault');
 
-            form.addEventListener('submit', async (e) => {
-                e.preventDefault();
+        // Функции валидации (такие же как в логине)
+        function validateEmail(email) {
+            const re = /^[^\s@@]+@@[^\s@@]+\.[^\s@@]+$/;
+            return re.test(String(email).toLowerCase());
+        }
 
-                if(!termsCheckbox.checked) {
-                    alert('Пожалуйста, примите условия использования');
-                    return;
-                }
+        function validatePassword(password) {
+            return password.length >= 3;
+        }
 
-                const userData = {
-                    FullName: document.getElementById('fullName').value,
-                    Email: document.getElementById('email').value,
-                    Password: document.getElementById('password').value
-                };
+        function showError(input, message) {
+            const formGroup = input.closest('.form-floating');
+            let errorElement = formGroup.querySelector('.error-message');
+            
+            if (!errorElement) {
+                errorElement = document.createElement('div');
+                errorElement.className = 'error-message text-danger mt-1';
+                formGroup.appendChild(errorElement);
+            }
+            
+            errorElement.textContent = message;
+            input.classList.add('is-invalid');
+        }
 
-                try {
-                    const response = await fetch('/Auth/register', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify(userData)
-                    });
+        function clearError(input) {
+            const formGroup = input.closest('.form-floating');
+            const errorElement = formGroup.querySelector('.error-message');
+            
+            if (errorElement) {
+                errorElement.remove();
+            }
+            
+            input.classList.remove('is-invalid');
+        }
 
-                    const result = await response.text();
-                    alert(result);
-
-                    if(response.ok) {
-                        window.location.href = '/auth/login';
-                    }
-                } catch (error) {
-                    console.error('Ошибка:', error);
-                    alert('Ошибка регистрации');
-                }
-            });
+        // Обработчики ввода
+        fullNameInput.addEventListener('input', () => {
+            if (fullNameInput.value.trim() === '') {
+                showError(fullNameInput, 'Full name is required');
+            } else {
+                clearError(fullNameInput);
+            }
         });
-    </script>
+
+        emailInput.addEventListener('input', () => {
+            if (emailInput.value.trim() === '') {
+                showError(emailInput, 'Email is required');
+            } else if (!validateEmail(emailInput.value)) {
+                showError(emailInput, 'Invalid email format');
+            } else {
+                clearError(emailInput);
+            }
+        });
+
+        passwordInput.addEventListener('input', () => {
+            if (passwordInput.value === '') {
+                showError(passwordInput, 'Password is required');
+            } else if (!validatePassword(passwordInput.value)) {
+                showError(passwordInput, 'Password must be at least 3 characters');
+            } else {
+                clearError(passwordInput);
+            }
+        });
+
+        // Обработчик отправки формы
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            let isValid = true;
+
+            // Валидация имени
+            if (fullNameInput.value.trim() === '') {
+                showError(fullNameInput, 'Full name is required');
+                isValid = false;
+            }
+
+            // Валидация email
+            if (emailInput.value.trim() === '') {
+                showError(emailInput, 'Email is required');
+                isValid = false;
+            } else if (!validateEmail(emailInput.value)) {
+                showError(emailInput, 'Invalid email format');
+                isValid = false;
+            }
+
+            // Валидация пароля
+            if (passwordInput.value === '') {
+                showError(passwordInput, 'Password is required');
+                isValid = false;
+            } else if (!validatePassword(passwordInput.value)) {
+                showError(passwordInput, 'Password must be at least 6 characters');
+                isValid = false;
+            }
+
+            // Проверка согласия
+            if (!termsCheckbox.checked) {
+                alert('Please agree to the Terms and Privacy');
+                isValid = false;
+            }
+
+            if (!isValid) return;
+
+            // Отправка данных (существующий код)
+            const userData = {
+                FullName: fullNameInput.value,
+                Email: emailInput.value,
+                Password: passwordInput.value
+            };
+
+            try {
+                const response = await fetch('/Auth/register', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(userData)
+                });
+
+                const result = await response.text();
+                alert(result);
+
+                if (response.ok) {
+                    window.location.href = '/auth/login';
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Registration error');
+            }
+        });
+    });
+</script>
 
     <!-- latest jquery-->
     <script src="../assets/js/jquery-3.6.0.min.js"></script>

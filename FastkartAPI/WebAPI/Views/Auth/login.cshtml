@@ -75,11 +75,6 @@
 
                                 <div class="col-12">
                                     <div class="forgot-box">
-                                        <div class="form-check ps-0 m-0 remember-box">
-                                            <input class="checkbox_animated check-box" type="checkbox"
-                                                id="flexCheckDefault">
-                                            <label class="form-check-label" for="flexCheckDefault">Remember me</label>
-                                        </div>
                                         <a href="/auth/forgot-password" class="forgot-password">Forgot Password?</a>
                                     </div>
                                 </div>
@@ -89,31 +84,6 @@
                                         In</button>
                                 </div>
                             </form>
-                        </div>
-
-                        <div class="other-log-in">
-                            <h6>or</h6>
-                        </div>
-
-                        <div class="log-in-button">
-                            <ul>
-                                <li>
-                                    <a href="https://www.google.com/" class="btn google-button w-100">
-                                        <img src="../assets/images/inner-page/google.png" class="blur-up lazyload"
-                                            alt=""> Log In with Google
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.facebook.com/" class="btn google-button w-100">
-                                        <img src="../assets/images/inner-page/facebook.png" class="blur-up lazyload"
-                                            alt=""> Log In with Facebook
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="other-log-in">
-                            <h6></h6>
                         </div>
 
                         <div class="sign-up-box">
@@ -142,40 +112,121 @@
     <!-- Bg overlay End -->
 
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const form = document.querySelector('form');
+    document.addEventListener('DOMContentLoaded', () => {
+        const form = document.querySelector('form');
+        const emailInput = document.getElementById('email');
+        const passwordInput = document.getElementById('password');
 
-            form.addEventListener('submit', async (e) => {
-                e.preventDefault();
+        // Функция валидации email
+        function validateEmail(email) {
+            const re = /^[^\s@@]+@@[^\s@@]+\.[^\s@@]+$/;
+            return re.test(String(email).toLowerCase());
+        }
 
-                const userData = {
-                    Email: document.getElementById('email').value,
-                    Password: document.getElementById('password').value
-                };
+        // Функция валидации пароля
+        function validatePassword(password) {
+            return password.length >= 3;
+        }
 
-                try {
-                    const response = await fetch('/Auth/login', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify(userData)
-                    });
+        // Показать ошибку
+        function showError(input, message) {
+            const formGroup = input.closest('.form-floating');
+            let errorElement = formGroup.querySelector('.error-message');
+            
+            if (!errorElement) {
+                errorElement = document.createElement('div');
+                errorElement.className = 'error-message text-danger mt-1';
+                formGroup.appendChild(errorElement);
+            }
+            
+            errorElement.textContent = message;
+            input.classList.add('is-invalid');
+        }
 
-                    if(response.ok) {
-                        const data = await response.json();
-                        window.location.href = '/home/index'; // Перенаправление на главную
-                    } else {
-                        const error = await response.text();
-                        alert(error);
-                    }
-                } catch (error) {
-                    console.error('Ошибка:', error);
-                    alert('Ошибка авторизации');
-                }
-            });
+        // Убрать ошибку
+        function clearError(input) {
+            const formGroup = input.closest('.form-floating');
+            const errorElement = formGroup.querySelector('.error-message');
+            
+            if (errorElement) {
+                errorElement.remove();
+            }
+            
+            input.classList.remove('is-invalid');
+        }
+
+        // Обработчики ввода
+        emailInput.addEventListener('input', () => {
+            if (emailInput.value.trim() === '') {
+                showError(emailInput, 'Email is required');
+            } else if (!validateEmail(emailInput.value)) {
+                showError(emailInput, 'Invalid email format');
+            } else {
+                clearError(emailInput);
+            }
         });
-    </script>
+
+        passwordInput.addEventListener('input', () => {
+            if (passwordInput.value === '') {
+                showError(passwordInput, 'Password is required');
+            } else if (!validatePassword(passwordInput.value)) {
+                showError(passwordInput, 'Password must be at least 6 characters');
+            } else {
+                clearError(passwordInput);
+            }
+        });
+
+        // Обработчик отправки формы
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            let isValid = true;
+
+            // Валидация email
+            if (emailInput.value.trim() === '') {
+                showError(emailInput, 'Email is required');
+                isValid = false;
+            } else if (!validateEmail(emailInput.value)) {
+                showError(emailInput, 'Invalid email format');
+                isValid = false;
+            }
+
+            // Валидация пароля
+            if (passwordInput.value === '') {
+                showError(passwordInput, 'Password is required');
+                isValid = false;
+            } else if (!validatePassword(passwordInput.value)) {
+                showError(passwordInput, 'Password must be at least 3 characters');
+                isValid = false;
+            }
+
+            if (!isValid) return;
+
+            // Отправка данных (существующий код)
+            const userData = {
+                Email: emailInput.value,
+                Password: passwordInput.value
+            };
+
+            try {
+                const response = await fetch('/Auth/login', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(userData)
+                });
+
+                if (response.ok) {
+                    window.location.href = '/home/index';
+                } else {
+                    const error = await response.text();
+                    alert(error);
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Authentication error');
+            }
+        });
+    });
+</script>
 
     <!-- latest jquery-->
     <script src="../assets/js/jquery-3.6.0.min.js"></script>

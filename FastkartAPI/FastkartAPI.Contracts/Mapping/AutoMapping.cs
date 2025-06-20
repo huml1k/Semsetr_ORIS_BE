@@ -16,6 +16,8 @@ namespace FastkartAPI.Services.Mapping
 
             this.CreateMap<LoginContract, UserModel>();
             this.CreateMap<RegitsterContract, UserModel>();
+
+            this.CreateMap<UpdateOrderStatusDTO, OrderModel>();
         }
     }
 }

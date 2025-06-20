@@ -22,6 +22,8 @@ namespace FastkartAPI.DataBase.Repositories.Interfaces
 
         public Task<List<ItemStore>> Search(string searchTerm);
 
+        public Task<int> GetCountItems();
+
         public Task Create(ItemStore user);
 
         public Task Delete(Guid id);

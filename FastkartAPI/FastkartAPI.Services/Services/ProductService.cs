@@ -59,5 +59,10 @@ namespace FastkartAPI.Services.Services
         {
             return await _itemStoreRepository.GetByCategory(type);
         }
+
+        public async Task<int> GetCountProducts() 
+        {
+            return await _itemStoreRepository.GetCountItems();
+        }
     }
 }
