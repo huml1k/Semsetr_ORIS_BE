@@ -9,7 +9,7 @@
   1. Открываем файл appsettings.json
   2. Меняем ConnectionString на свои параметры (в нашем случае мы используем PostgreSQL):
 
-       "MyDbContext": "User ID=postgres;Password=(Ваш пароль от базы данных);Host=localhost(можно указать мой Ip при наличи его);Port=(Ваш порт);Database=(Название база данных);Encoding=UTF8;"
+       "MyDbContext": "User ID=postgres;Password=(Ваш пароль от базы данных);Host=localhost(можно указать своой host при наличи его);Port=(Ваш порт);Database=(Название база данных);Encoding=UTF8;"
   4. Создаем миграцию:
        - Visual Studio: Средства -> Диспетчер пакетов NuGet -> Консоль диспетчер пакетов
        - В открывшимся окне В пункте "проект по умолчанию" выбираем FastkartAPI.Database
